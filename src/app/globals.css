@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.container {
+  @apply w-[85%] max-w-[2560px] mx-auto
+} 
+
+/* inputs */
+.input-text{
+  @apply w-full text-sm outline-none transition-all origin-center focus:border-primary border-[1px] border-black py-4 px-4 rounded-md bg-[#D9D9D9]/50 focus:outline-none
+}
+
+.input-text-lg{
+  @apply font-semibold w-full text-base outline-none transition-all origin-center focus:border-primary border-2 border-black py-3 px-3 bg-[#D9D9D9]/50 rounded-md focus:outline-none
+}
+
+.input-text-sm{
+  @apply font-semibold w-full text-xs outline-none transition-all origin-center focus:border-primary border-[1px] border-black py-2 px-1 rounded-md bg-[#D9D9D9]/50 focus:outline-none
+}
+
+.input-text-active{
+  @apply border-primary 
+}
+.input-text-error{
+  @apply border-red-500
+}
+.input-text-error ~ label{
+  @apply text-red-500
+}
+/* inputs */
+
+
+/* buttons */
+
+.btn{
+  @apply select-none transition-all font-medium tracking-widest  focus:outline-none rounded-lg py-4 px-10 text-sm disabled:bg-gray-300 disabled:text-gray-100 disabled:cursor-no-drop disabled:shadow-none
+}
+.btn{
+  @apply disabled:shadow-none !important
+}
+.btn-small{
+  @apply rounded-lg py-2 px-4 font-bold focus:outline-none text-xs relative transition-all shadow-md hover:shadow-lg disabled:shadow-none disabled:bg-gray-200 disabled:cursor-no-drop text-center
+}
+.btn-md{
+  @apply select-none transition-all font-medium tracking-widest focus:outline-none rounded-md py-3 uppercase px-4 text-xs disabled:bg-gray-300 disabled:text-gray-100 disabled:cursor-no-drop disabled:shadow-none
+}
+
+.btn-primary{
+  @apply bg-primary text-white 
+  /* @apply hover:bg-secondary active:bg-white  active:border-primary active:text-primary bg-primary text-white disabled:bg-gray-300 disabled:text-gray-100 disabled:cursor-no-drop */
+}
+
+/* buttons */
