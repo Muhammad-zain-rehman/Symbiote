@@ -47,3 +47,38 @@ export const OUR_SERVICES = [
         name:<>Apps and Portals<br/>Development</>
     },
 ]
+
+export const CONTENT_FORMATS = [
+    {
+        icon:"/icons/email_icon.svg",
+        name:"Emails"
+    },
+    {
+        icon:"/icons/finance_managing2.svg",
+        name:"Banners"
+    },
+    {
+        icon:"/icons/finance_managing2.svg",
+        name:"E-Detailing"
+    },
+    {
+        icon:"/icons/finance_managing2.svg",
+        name:"E-Learning"
+    },
+    {
+        icon:"/icons/video-icon.svg",
+        name:"2D-3D Video"
+    },
+    {
+        icon:"/icons/video-icon.svg",
+        name:"Custom Video Services"
+    },
+    {
+        icon:"/icons/ar-vr.svg",
+        name:"AR - VR"
+    },
+    {
+        icon:"/icons/finance_managing2.svg",
+        name:<>Veeva Modules</>
+    },
+]
