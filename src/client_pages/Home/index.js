@@ -3,17 +3,20 @@ import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 import ServicesCard from './ServicesCard'
 import { AnimatePresence, motion } from 'framer-motion'
+import AboutUs from './AboutUs'
+import RecentBlogs from './RecentBlogs'
+import ContactUsFrom from '@/components/ContactForm/Form'
 
 const ARR = [
   {
     title: "AI Solutions",
     src: "/icons/ai_solutions.svg",
-    description: "AI Solutions for Doctors, Patients, and Pharma Companies Our AI-driven solutions revolutionize the pharmaceutical landscape"
+    description: "Help us build a school in a remote village in Africa"
   },
   {
     title: "Content Production Hub",
     src: "/icons/content_hub.svg",
-    description: "our Content Production Hub stands as a beacon of efficiency and innovation"
+    description: "Help us build a school in a remote village in Africa"
   },
   {
     title: "Omnichannel Marketing",
@@ -22,17 +25,22 @@ const ARR = [
   },
   {
     title: "Digital Composition",
-    src: "/icons/content_hub.svg",
-    description: "As a provider of marketing technology services, we offer a comprehensive suite of digital production solutions designed to elevate your Pharma and Life Sciences business."
+    src: "/icons/digital_competition.svg",
+    description: "Help us build a school in a remote village in Africa"
+  },
+  {
+    title: "Modular Approach",
+    src: "/icons/modular_approach.svg",
+    description: "Help us build a school in a remote village in Africa"
   },
   {
     title: "eDetailing",
-    src: "/icons/content_hub.svg",
+    src: "/icons/e-detailing.svg",
     description: "Help us build a school in a remote village in Africa"
   },
   {
     title: "Email Marketing",
-    src: "/icons/content_hub.svg",
+    src: "/icons/email_marketing.svg",
     description: "Help us build a school in a remote village in Africa"
   },
 ]
@@ -101,13 +109,13 @@ const HomePage = () => {
     }, 5000)
   }, [activeSlide])
 
-  //   useEffect(() => {
-  //     if (loop) {
-  //         setTimeout(() => {
-  //             setLoop(false)
-  //         }, 500)
-  //     }
-  // }, [loop])
+  useEffect(() => {
+    if (loop) {
+      setTimeout(() => {
+        setLoop(false)
+      }, 500)
+    }
+  }, [loop])
 
 
   return (
@@ -230,17 +238,37 @@ const HomePage = () => {
           <div className='mx-auto flex justify-center sm-container'>
             <div className='py-10 grid grid-cols-3 gap-10'>
               <ServicesCard item={ARR[0]} />
-              <ServicesCard item={ARR[1]} />
-              <ServicesCard custom_class={"bg-[#F7F7F7]"} item={ARR[2]} />
-              <ServicesCard item={ARR[0]} />
-              <ServicesCard item={ARR[1]} />
-              <ServicesCard custom_class={"bg-[#F7F7F7]"} item={ARR[2]} />
+              <ServicesCard item={ARR[1]} custom_class={"h-[170px] bg-primary text-accent"} />
+              <ServicesCard custom_class={"bg-[#F7F7F7] h-[250px]"} item={ARR[2]} />
+              <ServicesCard item={ARR[3]} />
+              <div className='flex flex-col space-y-6'>
+                <ServicesCard item={ARR[4]} custom_class={"h-[160px] bg-primary text-accent -mt-[94px]"} />
+                <ServicesCard item={ARR[5]} custom_class={"h-[160px] bg-primary text-accent"} />
+
+              </div>
+              <ServicesCard custom_class={"bg-primary text-accent h-[250px]"} item={ARR[6]} />
             </div>
           </div>
 
         </div>
-
-
+      </div>
+      <div className=' h-[300px] flex flex-col justify-center items-center bg-cover bg-no-repeat text-accent bg-primary'
+        style={{
+          backgroundImage: `url(/images/landing_background2.svg)`
+        }}
+      >
+        <h1 className='font-bold text-4xl text-center'>Innovative Health Engagement<br />Solutions</h1>
+        <p className='text-center w-[60%] mt-8'>
+          Empowering your digital presence with cutting-edge strategies tailored for the <br />
+          pharmaceutical sector.
+          At Symbiote, we provide custom solutions and services actively <br /> used by industry leaders across the globe.
+        </p>
+      </div>
+      <AboutUs />
+      <RecentBlogs />
+      <div className='my-20'>
+        <h1 className='text-center text-4xl font-bold mb-10'>Connect with Us for Personalized<br /> Support</h1>
+        <ContactUsFrom />
       </div>
 
     </>
