@@ -8,7 +8,9 @@ const Header = () => {
   return (
     <div className='bg-primary py-4  '>
       <div className=' flex justify-between items-center container'>
-        <Image src={"/images/logo.svg"} className='w-[120px]' width={5000} height={5000} />
+        <Link href={"/"}>
+          <Image src={"/images/logo.svg"} className='w-[120px]' width={5000} height={5000} />
+        </Link>
         <NavLinks />
         <div>
           <Link href={"/contact-us"}>
