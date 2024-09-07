@@ -44,7 +44,8 @@ export const OUR_SERVICES = [
     },
     {
         icon:"/icons/email_icon.svg",
-        name:<>Apps and Portals<br/>Development</>
+        name:<>Apps and Portals<br/>Development</>,
+        url:"/apps-and-portals-development"
     },
 ]
 
