@@ -1,6 +1,7 @@
 import ContactUsFrom from '@/components/ContactForm/Form'
 import Image from 'next/image'
 import React from 'react'
+import InfiniteLooper from './InfiniteLooper'
 
 
 
@@ -152,11 +153,14 @@ const AboutUs = () => {
                     <p className='text-center text-white'>Trusted By 250+ Companies</p>
                     <div className='flex justify-center items-center'>
                         <div className='flex space-x-5 border-[1px] border-t-0 border-l-yellow-200/50 border-r-yellow-200/50 border-b-yellow-200/50'>
-                            <Image src={"/images/zapier.svg"} width={4000} height={4000} className='w-56' />
-                            <Image src={"/images/spotify.svg"} width={4000} height={4000} className='w-56' />
-                            <Image src={"/images/slack.svg"} width={4000} height={4000} className='w-56' />
-                            <Image src={"/images/amazon.svg"} width={4000} height={4000} className='w-56' />
-                            <Image src={"/images/adobe.svg"} width={4000} height={4000} className='w-56' />
+                                {/* <InfiniteLooper speed="10" direction="left"> */}
+
+                                <Image src={"/images/zapier.svg"} width={4000} height={4000} className='w-56' />
+                                <Image src={"/images/spotify.svg"} width={4000} height={4000} className='w-56' />
+                                <Image src={"/images/slack.svg"} width={4000} height={4000} className='w-56' />
+                                <Image src={"/images/amazon.svg"} width={4000} height={4000} className='w-56' />
+                                <Image src={"/images/adobe.svg"} width={4000} height={4000} className='w-56' />
+                                {/* </InfiniteLooper> */}
                         </div>
                     </div>
                 </div>

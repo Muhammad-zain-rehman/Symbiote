@@ -1,11 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 
-const RecentBlogs = () => {
+const SuccessfullCases = () => {
     return (
-        <div className='my-20 container'>
-
-            <h1 className='font-semibold mb-16 text-center text-4xl'>Our expertise converts into<br/>successful cases</h1>
+        <div className='container'>
+            <h1 className='text-4xl font-bold mb-16  text-primary text-center'>Our expertise converts into<br />successful cases</h1>
             <div className='  flex justify-center space-x-5'>
                 {
                     [1, 2, 3].map((item) => (
@@ -14,7 +13,6 @@ const RecentBlogs = () => {
                                 src={"/images/blog_dummy_image.png"}
                                 width={3000}
                                 height={2000}
-                                alt='dummy image'
                                 className='w-3/4 mx-auto'
                             />
                             <div className=' mt-4'>
@@ -34,4 +32,4 @@ const RecentBlogs = () => {
     )
 }
 
-export default RecentBlogs
+export default SuccessfullCases

@@ -1,6 +1,7 @@
 import ContactUsFrom from '@/components/ContactForm/Form'
 import { OUR_SERVICES } from '@/constants'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Services = () => {
@@ -8,9 +9,9 @@ const Services = () => {
         <>
             <div className='bg-secondary'>
                 <div className='min-h-[400px]  bg-cover bg-no-repeat container flex flex-col justify-center items-center'
-                style={{
-                     backgroundImage: `url(images/landing_background.svg)`
-                }}
+                    style={{
+                        backgroundImage: `url(images/landing_background.svg)`
+                    }}
                 >
                     <div className='w-full container space-y-10  bg-cover bg-no-repeat text-sm py-3 relative '>
                         <h1 className='text-[50px] text-center font-bold text-white'>Our Services</h1>
@@ -25,12 +26,14 @@ const Services = () => {
                 <div className='grid grid-cols-4 gap-10'>
                     {
                         OUR_SERVICES.map((item, index) => (
-                            <div className='bg-primary h-52 text-accent flex flex-col justify-start hover:cursor-pointer transition-all duration-150 delay-75 shadow-xl hover:-translate-y-4 items-center text-lg text-center rounded-xl'>
-                                <div className='w-full h-full flex justify-center flex-col items-center'>
-                                    <Image src={item.icon} width={1000} height={1000} className='w-14' />
-                                    <div className='pt-3'>{item.name}</div>
+                            <Link href={item.url}>
+                                <div className='bg-primary h-52 text-accent flex flex-col justify-start hover:cursor-pointer transition-all duration-150 delay-75 shadow-xl hover:-translate-y-4 items-center text-lg text-center rounded-xl'>
+                                    <div className='w-full h-full flex justify-center flex-col items-center'>
+                                        <Image src={item.icon} width={1000} height={1000} className='w-14' />
+                                        <div className='pt-3'>{item.name}</div>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
                         ))
                     }
                 </div>
@@ -51,8 +54,8 @@ const Services = () => {
                 </div>
             </div>
             <div className='py-24 space-y-14'>
-                <h1 className='text-5xl text-center font-bold '>Contact Us to Discover More About<br/>Our Services</h1>
-                <ContactUsFrom/>
+                <h1 className='text-5xl text-center font-bold '>Contact Us to Discover More About<br />Our Services</h1>
+                <ContactUsFrom />
             </div>
 
 

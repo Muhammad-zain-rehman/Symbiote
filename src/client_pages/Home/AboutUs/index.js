@@ -145,8 +145,11 @@ const AboutUs = () => {
                     height={2000}
 
                 />
+                <button className=' btn btn-primary'>
+                    Learn More
+                </button>
             </div>
-            <WhatClientSay/>
+            <WhatClientSay />
 
         </>
     )

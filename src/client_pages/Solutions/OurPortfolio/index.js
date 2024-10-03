@@ -11,6 +11,7 @@ const OurPortfolio = () => {
             width={1000}
             height={1000}
             className='w-[500px] mx-auto'
+            alt='our-portfolio'
 
             />
             <h1 className='text-4xl font-bold absolute top-0 left-1/2 -translate-x-1/2 '>
@@ -23,12 +24,14 @@ const OurPortfolio = () => {
                     src={"/images/dummy-portfolio.png"}
                     width={2000}
                     height={2000}
+                    alt='dummy'
                     className=' mx-auto rounded-md'
                 />
                 <Image
                     src={"/icons/video_icon.svg"}
                     width={2000}
                     height={2000}
+                    alt='video icon'
                     className='w-[100px] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 cursor-default absolute mx-auto rounded-md'
                 />
                 

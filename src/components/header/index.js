@@ -9,7 +9,7 @@ const Header = () => {
     <div className='bg-primary py-4  '>
       <div className=' flex justify-between items-center container'>
         <Link href={"/"}>
-          <Image src={"/images/logo.svg"} className='w-[120px]' width={5000} height={5000} />
+          <Image src={"/images/logo.svg"} className='w-[120px]' alt='header-logo' width={5000} height={5000} />
         </Link>
         <NavLinks />
         <div>

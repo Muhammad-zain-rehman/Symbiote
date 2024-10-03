@@ -16,36 +16,43 @@ export const BOOLEAN_OPTIONS =[
 export const OUR_SERVICES = [
     {
         icon:"/icons/email_icon.svg",
-        name:"Digital Production"
+        name:"Digital Production",
+        url:"/services/apps-and-portals-development"
     },
     {
         icon:"/icons/email_icon.svg",
-        name:"Email Marketing"
+        name:"Email Marketing",
+        url:"/services/apps-and-portals-development"
     },
     {
         icon:"/icons/email_icon.svg",
-        name:"Design Services"
+        name:"Design Services",
+        url:"/services/apps-and-portals-development"
     },
     {
         icon:"/icons/email_icon.svg",
-        name:"Data-Driven Analytics"
+        name:"Data-Driven Analytics",
+        url:"/services/apps-and-portals-development"
     },
     {
         icon:"/icons/email_icon.svg",
-        name:"Modular Content"
+        name:"Modular Content",
+         url:"/services/apps-and-portals-development"
     },
     {
         icon:"/icons/email_icon.svg",
-        name:"E-detailing"
+        name:"E-detailing",
+         url:"/services/apps-and-portals-development"
     },
     {
         icon:"/icons/email_icon.svg",
-        name:"Omnichannel Marketing"
+        name:"Omnichannel Marketing",
+         url:"/services/apps-and-portals-development"
     },
     {
         icon:"/icons/email_icon.svg",
         name:<>Apps and Portals<br/>Development</>,
-        url:"/apps-and-portals-development"
+        url:"/services/apps-and-portals-development"
     },
 ]
 

@@ -8,6 +8,10 @@
 .container {
   @apply w-[85%] max-w-[2560px] mx-auto
 } 
+.sm-container {
+  @apply w-[80%] max-w-[2450px] mx-auto
+} 
+
 
 /* inputs */
 .input-text{
@@ -55,3 +59,41 @@
 }
 
 /* buttons */
+
+
+
+/* Horizontal Animation */
+/* looper */
+@keyframes slideAnimation {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.looper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.looper__innerList {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.looper__innerList[data-animate="true"] .looper__listInstance {
+  animation: slideAnimation linear infinite;   
+}
+
+.looper__listInstance {
+  display: flex;
+  align-items: center;
+  width: max-content;
+
+  animation: none;
+}
+/* looper */
+/* Horizontal Animation */

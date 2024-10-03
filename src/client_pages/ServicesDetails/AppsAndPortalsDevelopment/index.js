@@ -1,6 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 import WhoWeAre from './WhoWeAre'
+import Expertise from './Expertise'
+import WinCompetition from './WinCompetition'
+import OnlineLearning from './OnlineLearning'
+import SuccessfullCases from './SuccessfullCases'
 
 const AppsAndPortalsDevelopment = () => {
     // mobile_apps_main.svg
@@ -29,7 +33,21 @@ const AppsAndPortalsDevelopment = () => {
                     </div>
                 </div>
             </div>
-            <WhoWeAre />
+            <div className='py-20'>
+                <WhoWeAre />
+            </div>
+            <div className='py-20'>
+                <WinCompetition/>
+            </div>
+            <div>
+                <Expertise/>
+            </div>
+            <div className='pt-20 pb-32'>
+                <OnlineLearning/>
+            </div>
+            <div className='pt-20 pb-32'>
+                <SuccessfullCases/>
+            </div>
 
         </>
     )

@@ -5,7 +5,7 @@ const RecentBlogs = () => {
     return (
         <div className='my-20 container'>
 
-            <h1 className='font-semibold mb-16 text-center text-4xl'>Our expertise converts into<br/>successful cases</h1>
+            <h1 className='font-semibold mb-10 text-center text-4xl'>Recent Blog Articles</h1>
             <div className='  flex justify-center space-x-5'>
                 {
                     [1, 2, 3].map((item) => (
@@ -14,7 +14,6 @@ const RecentBlogs = () => {
                                 src={"/images/blog_dummy_image.png"}
                                 width={3000}
                                 height={2000}
-                                alt='dummy image'
                                 className='w-3/4 mx-auto'
                             />
                             <div className=' mt-4'>

@@ -16,7 +16,7 @@ const Footer = () => {
 
       <div className='container space-y-12'>
         <div className=' flex text-sm justify-between items-center'>
-            <Image src={"/images/logo.svg"} className='w-[120px]' width={5000} height={5000} />
+            <Image src={"/images/logo.svg"} className='w-[120px]' alt='footer-logo'  width={5000} height={5000} />
 
 
             <div className='flex space-x-8 text-sm'>
@@ -32,9 +32,9 @@ const Footer = () => {
 
           <div className='flex space-x-4 border-[1px] px-2  rounded-xl py-4  items-center border-white '>
             <div className='text-white text-sm'>Stay Connected</div>
-            <div className='bg-primary flex-shrink-0 rounded-lg p-2'><Image src={"/icons/facebook.svg"} className='w-4' width={1000} height={1000} /> </div>
-            <div className='bg-primary flex-shrink-0 rounded-lg p-2'><Image src={"/icons/twitter.svg"} className='w-4' width={1000} height={1000} /> </div>
-            <div className='bg-primary flex-shrink-0 rounded-lg p-2'><Image src={"/icons/linkdIn.svg"} className='w-4' width={1000} height={1000} /> </div>
+            <div className='bg-primary flex-shrink-0 rounded-lg p-2'><Image src={"/icons/facebook.svg"} alt='facebook-icon' className='w-4' width={1000} height={1000} /> </div>
+            <div className='bg-primary flex-shrink-0 rounded-lg p-2'><Image src={"/icons/twitter.svg"} alt='twitter-icon' className='w-4' width={1000} height={1000} /> </div>
+            <div className='bg-primary flex-shrink-0 rounded-lg p-2'><Image src={"/icons/linkdIn.svg"} alt='linkedIn-icon' className='w-4' width={1000} height={1000} /> </div>
           </div>
 
 
@@ -68,7 +68,7 @@ const Footer = () => {
       </div>
 
       <div className='flex justify-end mt-10'>
-        <Image src={"/images/footer_line.svg"} width={500} height={500} className=' w-[90%]' />
+        <Image src={"/images/footer_line.svg"} alt='footer-line' width={500} height={500} className=' w-[90%]' />
       </div>
 
 

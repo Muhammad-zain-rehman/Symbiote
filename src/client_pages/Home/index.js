@@ -188,7 +188,7 @@ const HomePage = () => {
 
 
           <div className='flex space-x-5 mt-10'>
-            <button className=' btn btn-primary border-[1px] border-white/30'>
+            <button className=' btn btn-primary uppercase border-[1px] border-white/30'>
               Our Works
             </button>
             <button className='bg-white uppercase text-black py-3 px-8 text-sm rounded-lg'>
@@ -252,7 +252,7 @@ const HomePage = () => {
 
         </div>
       </div>
-      <div className=' h-[300px] flex flex-col justify-center items-center bg-cover bg-no-repeat text-accent bg-primary'
+      <div className=' h-[350px] flex flex-col justify-center items-center bg-cover bg-no-repeat text-accent bg-primary'
         style={{
           backgroundImage: `url(/images/landing_background2.svg)`
         }}
