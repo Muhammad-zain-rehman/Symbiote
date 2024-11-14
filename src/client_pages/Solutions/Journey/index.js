@@ -42,8 +42,10 @@ const STEPS = [
 const Journey = () => {
     return (
         <>
-            <div className='text-center py-10'>
-                <h1 className='text-4xl font-semibold'>Pharma digital transformation journey<br />to future-ready smart content</h1>
+            <div className='container text-center py-10'>
+                <h1 className='hidden lg:block text-4xl font-semibold'>Pharma digital transformation journey<br />to future-ready smart content</h1>
+                <h1 className='lg:hidden text-4xl font-semibold'>Pharma digital transformation journey to future-ready smart content</h1>
+
                 <p className='py-8'>
                     symbiote offers a holistic approach from the content operational foundation
                     development to the seamless adoption of innovation
@@ -51,10 +53,10 @@ const Journey = () => {
             </div>
 
 
-            <div className='grid grid-cols-4 items-start '>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center items-center xl:items-start container xl:w-[100%]'>
                 {
                     STEPS.map((item, index) => (
-                        <div className={` ${index===0?"bg-secondary rounded-r-3xl text-accent":""} py-10 px-10 h-[300px] cursor-pointer hover:shadow-2xl hover:rounded-3xl  w-[350px]  `}>
+                        <div className={` ${index===0?"bg-secondary rounded-3xl xl:rounded-r-3xl xl:rounded-l-none text-accent":""} py-10 px-10 h-[300px] cursor-pointer hover:shadow-2xl hover:rounded-3xl  w-[350px]  `}>
                             <div  className=' text-left mb-6 text-2xl font-bold'>{item.title}</div>
                             <ul className=' list-disc '>
 

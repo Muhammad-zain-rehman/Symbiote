@@ -12,7 +12,7 @@ const TESTINOMIALS = [
     },
     {
         name: "Content auto-tagging",
-        custom_class: "h-32"
+        custom_class: "h-40 lg:h-32"
     },
     {
         name: "Content data management & analytics",
@@ -20,23 +20,23 @@ const TESTINOMIALS = [
     },
     {
         name: "Medical marketing strategy",
-        custom_class: "h-32"
+        custom_class: "h-40 lg:h-32"
     },
     {
         name: "Corporate learning programs",
-        custom_class: "h-32"
+        custom_class: "h-40 lg:h-32"
     },
     {
         name: "Change management / Project management",
-        custom_class: "h-40 -mt-8"
+        custom_class: "h-40 lg:-mt-8"
     },
     {
         name: "Custom software development",
-        custom_class: "h-32"
+        custom_class: "h-40 lg:h-32"
     },
     {
         name: "Enterprise solutions production",
-        custom_class: "h-40 -mt-8"
+        custom_class: "h-40 lg:-mt-8"
     }
 ]
 
@@ -45,16 +45,24 @@ const AboutUs = () => {
         <>
             <div className=' container py-20 '>
                 <div className='flex '>
-                    <div className='w-1/2'>
+                    <div className='lg:w-1/2'>
                         <h1 className='font-bold text-4xl text-[#242424]'>About Our Company</h1>
                         <div className='mt-4 text-lg'>
                             Simbiote has been driving digital transformation in Pharma and Life Sciences since 2020. As a comprehensive Digital Marketing Solutions provider, we specialize in delivering complex, high-impact projects tailored to your business needs
                         </div>
+                        <div className='lg:hidden mt-5'>
+                        <Image
+                            src={"/images/our_company.svg"}
+                            width={2000}
+                            height={2000}
+                            className=''
+                        />
+                    </div>
                         <div className='mt-5'>
                             <button className='btn btn-primary'>Initiate a Dialogue</button>
                         </div>
                     </div>
-                    <div className='w-1/2'>
+                    <div className='hidden lg:block w-1/2'>
                         <Image
                             src={"/images/our_company.svg"}
                             width={2000}
@@ -64,14 +72,22 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className='flex mt-20 justify-between '>
-                    <div className='w-1/2'>
+                    <div className='lg:w-1/2'>
                         <h1 className='font-bold text-4xl text-[#242424]'>Who we are</h1>
                         <div className='mt-4 text-lg'>
                             Simbiote is a leading global provider of services for the Life Sciences sector, specializing in Digital Marketing Solutions. We deliver end-to-end, customized solutions designed to achieve omnichannel excellence, regardless of your digital maturity level. Our team of over 1000+ dedicated professionals is focused on executing top-tier omnichannel projects and communication strategies for the global pharmaceutical market.
                         </div>
+                        <div className='lg:hidden'>
+                        <Image
+                            src={"/images/who_we_are.svg"}
+                            width={2000}
+                            height={2000}
+                            className=''
+                        />
+                    </div>
                         <div className='my-8 grid grid-cols-3 space-x-5'>
                             <div className='  border-primary/50 border-r-2 border-dashed'>
-                                <div className='font-medium text-5xl'>
+                                <div className='font-medium text-3xl md:text-5xl'>
                                     1000+
                                 </div>
                                 <div className='text-primary font-medium'>
@@ -79,7 +95,7 @@ const AboutUs = () => {
                                 </div>
                             </div>
                             <div className=' border-primary/50 border-r-2 border-dashed'>
-                                <div className='font-medium text-5xl'>
+                                <div className='font-medium text-3xl md:text-5xl'>
                                     3+
                                 </div>
                                 <div className='text-primary font-medium'>
@@ -87,7 +103,7 @@ const AboutUs = () => {
                                 </div>
                             </div>
                             <div className=' '>
-                                <div className='font-medium text-5xl'>
+                                <div className='font-medium text-3xl md:text-5xl'>
                                     90+
                                 </div>
                                 <div className='text-primary font-medium'>
@@ -100,7 +116,7 @@ const AboutUs = () => {
                             <button className='btn btn-primary'>Learn More</button>
                         </div>
                     </div>
-                    <div className='w-1/2 flex justify-end'>
+                    <div className='hidden lg:flex w-1/2 justify-end'>
                         <Image
                             src={"/images/who_we_are.svg"}
                             width={2000}
@@ -109,8 +125,8 @@ const AboutUs = () => {
                         />
                     </div>
                 </div>
-                <div className='mt-20 flex'>
-                    <div className='w-1/2'>
+                <div className='mt-20 flex flex-col lg:flex-row'>
+                    <div className='lg:w-1/2'>
                         <Image
                             src={"/images/transforming_image.svg"}
                             width={1000}
@@ -118,7 +134,7 @@ const AboutUs = () => {
                             className=''
                         />
                     </div>
-                    <div className='bg-primary rounded-br-[50px] w-1/2 rounded-l-[10px] px-10 space-y-5 flex flex-col justify-center text-white'>
+                    <div className='bg-primary -mt-4 lg:mt-0 min-h-[400px] py-10 lg:py-0 rounded-b-xl lg:rounded-br-[50px] lg:w-1/2 lg:rounded-l-[10px] px-10 space-y-5 flex flex-col justify-center text-white'>
                         <span className='text-white/90'>Welcome to your bank</span>
                         <h1 className='text-4xl font-medium'>Transforming Your Brand into an Impactful Narrative</h1>
                         <div className='text-[#B3B3B3]'>
@@ -128,18 +144,18 @@ const AboutUs = () => {
 
                 </div>
             </div>
-            <div className='mt-20 py-20 flex flex-col bg-cover bg-no-repeat bg-center justify-center items-center bg-primary text-center'
+            <div className='lg:mt-20 py-20 flex flex-col bg-cover bg-no-repeat bg-center justify-center items-center bg-primary text-center'
                 style={{
                     backgroundImage: `url(images/landing_background.svg)`
                 }}
             >
                 <h1 className='text-4xl text-white font-semibold'>Client Testinomials</h1>
-                <div className=' text-[#E6E6E6] w-[70%] mx-auto mt-8'>
+                <div className=' text-[#E6E6E6] w-[80%] md:w-[70%] mx-auto mt-8'>
                     At Simbiote, we are dedicated to delivering outstanding digital products and services that drive client success. Discover what some of our satisfied clients have to say about their experience working with us
                 </div>
 
 
-                <div className=' grid grid-cols-4 gap-5 w-[60%] mt-10 '>
+                <div className=' grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-[80%] md:w-[60%] mt-10 '>
                     {
                         TESTINOMIALS.map((item) => (
                             <div className={`text-sm bg-white px-4 flex flex-col justify-center items-center rounded-xl ${item.custom_class ? item.custom_class : "h-40"} `}>
@@ -151,8 +167,8 @@ const AboutUs = () => {
                 </div>
                 <div className='mt-16 space-y-5'>
                     <p className='text-center text-white'>Trusted By 250+ Companies</p>
-                    <div className='flex justify-center items-center'>
-                        <div className='flex space-x-5 border-[1px] border-t-0 border-l-yellow-200/50 border-r-yellow-200/50 border-b-yellow-200/50'>
+                    <div className='container lg:w-[100%] flex justify-center items-center'>
+                        <div className='flex flex-wrap justify-evenly gap-x-5 border-[1px] border-t-0 border-l-yellow-200/50 border-r-yellow-200/50 border-b-yellow-200/50'>
                                 {/* <InfiniteLooper speed="10" direction="left"> */}
 
                                 <Image src={"/images/zapier.svg"} width={4000} height={4000} className='w-56' />
@@ -165,20 +181,22 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            <div className='h-[400px] flex flex-col justify-center text-3xl font-bold text-[#262626] text-center '
+            <div className=' h-[400px] flex flex-col justify-center  text-xl md:text-3xl font-bold text-[#262626] text-center '
                 style={{
                     backgroundImage: `url(images/mesh2.png)`
                 }}
             >
+                <p className='container'>
                 Establish a cohesive workspace for your global and local<br />
                 marketing teams, as well as external agencies, streamlining<br />
                 product promotions into an efficient and well-coordinated process
+                </p>
 
             </div>
-            <div className='my-24'>
-                <h1 className='text-5xl text-center font-bold '>Get Customized Marketing Solutions<br /> for Your Business</h1>
+            <div className='my-12 lg:my-24'>
+                <h1 className='text-3xl md:text-5xl text-center font-bold '>Get Customized Marketing Solutions<br /> for Your Business</h1>
 
-                <div className='mt-20'>
+                <div className='mt-10 lg:mt-20'>
                     <ContactUsFrom />
                 </div>
             </div>

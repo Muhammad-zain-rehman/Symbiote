@@ -3,10 +3,10 @@ import React from 'react'
 
 const RecentBlogs = () => {
     return (
-        <div className='my-20 container'>
+        <div className='my-10 lg:my-20 container'>
 
             <h1 className='font-semibold mb-10 text-center text-4xl'>Recent Blog Articles</h1>
-            <div className='  flex justify-center space-x-5'>
+            <div className='  flex flex-col md:flex-row justify-center items-center gap-x-5 gap-y-4'>
                 {
                     [1, 2, 3].map((item) => (
                         <div className=' rounded-xl  text-center flex flex-col justify-center items-center text-accent bg-secondary w-[300px] py-8'>

@@ -55,7 +55,7 @@ const ContactUsFrom = () => {
           form => (
             <form>
               <div className=''>
-                <div className=' grid grid-cols-2 gap-5'>
+                <div className=' grid sm:grid-cols-2 gap-5'>
                   <div className=''>
                     <TextField
                       field="title"

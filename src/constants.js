@@ -17,37 +17,37 @@ export const OUR_SERVICES = [
     {
         icon:"/icons/email_icon.svg",
         name:"Digital Production",
-        url:"/services/apps-and-portals-development"
+        url:"/services/digital-production"
     },
     {
         icon:"/icons/email_icon.svg",
         name:"Email Marketing",
-        url:"/services/apps-and-portals-development"
+        url:"/services/email-marketing"
     },
     {
         icon:"/icons/email_icon.svg",
         name:"Design Services",
-        url:"/services/apps-and-portals-development"
+        url:"/services/design-services"
     },
     {
         icon:"/icons/email_icon.svg",
         name:"Data-Driven Analytics",
-        url:"/services/apps-and-portals-development"
+        url:"/services/data-driven-analytics"
     },
     {
         icon:"/icons/email_icon.svg",
         name:"Modular Content",
-         url:"/services/apps-and-portals-development"
+         url:"/services/modular-content"
     },
     {
         icon:"/icons/email_icon.svg",
         name:"E-detailing",
-         url:"/services/apps-and-portals-development"
+         url:"/services/e-detailing"
     },
     {
         icon:"/icons/email_icon.svg",
         name:"Omnichannel Marketing",
-         url:"/services/apps-and-portals-development"
+         url:"/services/omnichannel-marketing"
     },
     {
         icon:"/icons/email_icon.svg",

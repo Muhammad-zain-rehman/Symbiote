@@ -111,9 +111,10 @@ const HomePage = () => {
   return (
     <>
       <div className='bg-primary'>
-        <div className='text-white min-h-[450px] container  relative  flex '>
-          <div className='w-1/2 pt-8 pb-14'>
-            <h1 className='text-5xl font-bold'>DIGITAL CONTENT<br /> FACTORY</h1>
+        <div className='text-white min-h-[450px] container  relative  lg:flex '>
+          <div className='lg:w-1/2 pt-8 lg:pb-14'>
+            <h1 className='hidden lg:block text-5xl font-bold'>DIGITAL CONTENT<br /> FACTORY</h1>
+            <h1 className='lg:hidden text-center text-5xl font-bold'>DIGITAL CONTENT FACTORY</h1>
             <div className='text-base mt-8'>
               Introducing Our Digital Content Factory, a cutting-edge solution designed to streamline and scale your content
               production for the Pharma and Life Sciences sector. Our platform enables you to efficiently generate high-quality
@@ -129,7 +130,7 @@ const HomePage = () => {
               </button>
             </div>
           </div>
-          <div className='w-1/2'>
+          <div className='lg:w-1/2'>
             <Image
               src={"/images/map-white.svg"}
               className=''
@@ -145,18 +146,20 @@ const HomePage = () => {
       </div>
 
       <div className='container'>
-        <div className='flex space-x-5 pt-5 rounded-b-2xl bg-[#262626] relative'>
-          <div className='bg-[#262626] py-3 px-8 text-white rounded-full text-sm absolute -top-5  left-1/2 -translate-x-1/2'>
+      <div className='flex gap-x-5 pt-5 rounded-b-2xl bg-[#262626] relative'>
+          <div className='bg-[#262626] py-3 px-8 min-w-[265px] text-white rounded-full text-sm absolute -top-5  left-1/2 -translate-x-1/2'>
             Trusted By 250+ Companies
           </div>
+          <div className='flex flex-wrap w-full justify-evenly'>
           <Image src={"/images/zapier.svg"} width={4000} height={4000} className='w-56' />
           <Image src={"/images/spotify.svg"} width={4000} height={4000} className='w-56' />
           <Image src={"/images/slack.svg"} width={4000} height={4000} className='w-56' />
           <Image src={"/images/amazon.svg"} width={4000} height={4000} className='w-56' />
           <Image src={"/images/adobe.svg"} width={4000} height={4000} className='w-56' />
+          </div>
         </div>
 
-        <div className='my-20 space-y-5'>
+        <div className='mt-10 md:my-20 space-y-5'>
           <div className='text-center  text-4xl mt-10 font-semibold'>
             Why Pharma needs Digital Content <br />
             Factory?
@@ -167,8 +170,8 @@ const HomePage = () => {
           </div>
 
 
-          <div className='mx-auto flex justify-center sm-container'>
-            <div className='py-10 grid grid-cols-3 gap-10'>
+          <div className='mx-auto flex justify-center lg:sm-container'>
+            <div className='py-10 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10'>
               <ServicesCard item={ARR[0]} />
               <ServicesCard item={ARR[1]} />
               <ServicesCard custom_class={"bg-[#F7F7F7] h-[300px]"} item={ARR[2]} />
@@ -178,13 +181,13 @@ const HomePage = () => {
 
         </div>
       </div>
-      <div className='min-h-[600px] flex flex-col  justify-center items-center bg-cover bg-no-repeat text-accent bg-primary'
+      <div className=' min-h-[600px] flex flex-col  justify-center items-center bg-cover bg-no-repeat text-accent bg-primary py-10 md:py-0'
         style={{
           backgroundImage: `url(/images/landing_background2.svg)`
         }}
       >
-        <h1 className='font-bold text-4xl text-center'>DCF provides flexible content development<br />services across channels</h1>
-        <p className='text-center w-[60%] mt-8'>
+        <h1 className='font-bold text-4xl text-center container'>DCF provides flexible content development<br />services across channels</h1>
+        <p className='text-center w-[60%] mt-8 container'>
           Empowering your digital presence with cutting-edge strategies tailored for the <br />
           pharmaceutical sector.
           At Symbiote, we provide custom solutions and services actively <br /> used by industry leaders across the globe.
@@ -192,12 +195,12 @@ const HomePage = () => {
         <Slider />
       </div>
       <div>
-        <div className='py-20 container'>
-          <h1 className='text-center pb-20 font-semibold text-4xl'>
+        <div className='py-10 md:py-20 container'>
+          <h1 className='text-center pb-10 md:pb-20 font-semibold text-4xl'>
             Digital Content Factory works with<br />numerous content formats
           </h1>
           <div className=' relative p-[3%]'>
-            <div className='grid grid-cols-4 gap-10'>
+            <div className='grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-5 md:gap-10'>
               {
                 CONTENT_FORMATS.map((item, index) => (
                   <div className='bg-primary h-40 text-accent flex flex-col justify-start hover:cursor-pointer transition-all duration-150 delay-75 shadow-xl hover:-translate-y-4 items-center text-lg text-center rounded-xl'>
@@ -223,7 +226,7 @@ const HomePage = () => {
             />
 
           </div>
-          <div className='flex justify-center'>
+          <div className='flex justify-center mt-4'>
             <button className=' uppercase btn btn-primary '>
               Get A consulation
             </button>
@@ -232,7 +235,7 @@ const HomePage = () => {
       </div>
       <div>
         <h1 className='text-4xl font-semibold text-center'>Benefits of DCF implementation<br />for business</h1>
-        <div className=' container gap-10 my-16 grid grid-cols-3'>
+        <div className=' container gap-10 my-16  sm:grid-cols-2 grid md:grid-cols-3'>
           {
             DCF_IMPLEMENTATION.map((item) => (
               <div className=''>

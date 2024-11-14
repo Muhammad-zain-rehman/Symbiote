@@ -6,11 +6,12 @@
 
 
 .container {
-  @apply w-[85%] max-w-[2560px] mx-auto
+  @apply w-[85%] max-w-[1600px] mx-auto
 } 
 .sm-container {
-  @apply w-[80%] max-w-[2450px] mx-auto
+  @apply w-[80%] max-w-[1530px] mx-auto
 } 
+
 
 
 /* inputs */
@@ -60,6 +61,20 @@
 
 /* buttons */
 
+@keyframes ticker-kf {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-90rem, 0, 0);
+  }
+}
+
+.img-ticker {
+  animation: ticker-kf 16s linear infinite;
+}
+
 
 
 /* Horizontal Animation */
@@ -70,6 +85,11 @@
   }
   to {
     transform: translateX(-100%);
+  }
+}
+@media (max-width: 640px) {
+  .no-scroll {
+    overflow: hidden;
   }
 }
 

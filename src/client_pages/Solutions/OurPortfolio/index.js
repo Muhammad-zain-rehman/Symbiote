@@ -5,7 +5,7 @@ const OurPortfolio = () => {
   return (
     <>
     <div>
-        <div className='relative w-fit flex justify-center mx-auto'>
+        <div className='container relative w-fit flex justify-center mx-auto'>
             <Image
             src={"/images/our_portfolio.png"}
             width={1000}
@@ -14,7 +14,7 @@ const OurPortfolio = () => {
             alt='our-portfolio'
 
             />
-            <h1 className='text-4xl font-bold absolute top-0 left-1/2 -translate-x-1/2 '>
+            <h1 className='text-3xl md:text-4xl font-bold absolute top-0 left-1/2 text-nowrap -translate-x-1/2 '>
                 Our portfolio
             </h1>
         </div>

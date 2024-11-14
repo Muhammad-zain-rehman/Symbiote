@@ -73,7 +73,7 @@ const Slider = () => {
 
 
     return (
-        <div className=' relative mt-10'>
+        <div className='container relative mt-10'>
             <div className=' pb-10 flex space-x-4 justify-center'>
                 <div onClick={() => setActiveSlide(MAIN_SECTION_ARRY[0])} className={`cursor-pointer ${activeSlide.id === MAIN_SECTION_ARRY[0].id ? "bg-white" : "bg-[#494949]"} transition-all duration-100 delay-75 w-[32px] h-[2px]  rounded-3xl`}></div>
                 <div onClick={() => setActiveSlide(MAIN_SECTION_ARRY[1])} className={`cursor-pointer ${activeSlide.id === MAIN_SECTION_ARRY[1].id ? "bg-white" : "bg-[#494949]"} transition-all duration-100 delay-75 w-[32px] h-[2px]  rounded-3xl `}></div>
@@ -133,7 +133,7 @@ const Slider = () => {
 
                         }
                     }}
-                    className='text-white font-light text-center text-xl mt-8'>
+                    className='text-white font-light text-center text-md  mt-8'>
                     {activeSlide.description}
                 </motion.div>
 

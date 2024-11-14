@@ -41,21 +41,22 @@ const ARRAY = [
 const WhatClientSay = () => {
     return (
         <>
-            <div className='flex min-h-[600px] mt-20  px-[10%] bg-cover bg-no-repeat bg-center' style={{
+            <div className='lg:flex min-h-[600px] mt-20  px-[10%] bg-cover bg-no-repeat bg-center ' style={{
                 background: `url(/images/landing_background.svg)`
             }}>
-                <div className='w-1/2 text-white flex flex-col justify-center '>
+                <div className='lg:w-1/2 text-white flex flex-col justify-center  '>
 
-                    <h1 className='text-4xl font-semibold text-left '>What our Clients say <br />About Us</h1>
-                    <p className='mt-10 text-left w-1/2'>
+                    <h1 className='hidden lg:block text-4xl font-semibold text-left  '>What our Clients say <br />About Us</h1>
+                    <h1 className='lg:hidden text-4xl font-semibold text-left mt-10'>What our Clients say About Us</h1>
+                    <p className='mt-10 text-left lg:w-1/2'>
                         At SquareUp, we take pride in delivering exceptional digital products and services that drive success
                         for our clients. Here's what some of our satisfied clients have to say about their experience working with us
                     </p>
                 </div>
-                <div className='w-1/2 text-sm text-accent grid gap-5 grid-cols-2'>
+                <div className='flex flex-wrap lg:w-1/2 py-10 lg:py-0 text-sm text-accent lg:grid gap-5 grid-cols-2'>
                     {
                         ARRAY.map((item)=>(
-                            <div className='card_type_1 min-h-[200px] p-4 rounded-xl space-y-4 '>
+                            <div className='mx-auto card_type_1 max-w-[250px] lg:w-auto min-h-[200px] p-4 rounded-xl space-y-4 '>
                                 <div>
                                     <p>
                                         {item.description}

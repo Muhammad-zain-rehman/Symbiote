@@ -50,9 +50,9 @@ const AboutUs = () => {
                         lasting presence in the pharma industry.
                     </p>
                 </div>
-                <div className='flex justify-between space-x-10 items-start my-10'>
-                    <div className='w-[40%] relative '>
-                        <div className=' grid grid-cols-2 gap-5 mt-5 ml-[3%]'>
+                <div className='lg:flex justify-between lg:space-x-10 items-start my-10'>
+                    <div className='lg:w-[40%] relative '>
+                        <div className=' grid grid-cols-2 gap-5 mt-5 lg:ml-[3%]'>
                             {
                                 ABOUT_US_ARR.map((item) => (
                                     <div className={`bg-primary text-accent  space-y-5  px-5 py-4  rounded-[20px] flex flex-col justify-center items-center`}>
@@ -74,7 +74,7 @@ const AboutUs = () => {
                             className='w-32 absolute z-[-1] top-0 left-0'
                         />
                     </div>
-                    <div className=' w-[50%] text-secondary mt-5'>
+                    <div className=' lg:w-[50%] text-secondary mt-5'>
                         <h1 className='text-4xl font-semibold'>About Us</h1>
                         <p className='text-lg mt-5'>
                             Symbiote stands at the forefront of pharmaceutical digital marketing.
@@ -99,8 +99,8 @@ const AboutUs = () => {
 
                     </div>
                 </div>
-                <div className='flex justify-between mt-32'>
-                    <div className='w-[60%] '>
+                <div className='lg:flex justify-between lg:mt-32'>
+                    <div className='lg:w-[60%] '>
                         <h1 className='text-4xl font-semibold mb-5'>What we do</h1>
                         <div className='mb-5'>
                             At Symbiote, we specialize in merging marketing and digital technology to deliver
@@ -113,10 +113,10 @@ const AboutUs = () => {
                             Learn More
                         </button>
                     </div>
-                    <div className=' w-[30%]  relative flex flex-col justify-end items-end pt-5 pr-5 '>
+                    <div className=' lg:w-[30%]  relative flex lg:flex-col justify-center items-center gap-x-5 lg:justify-end lg:items-end pt-5 pr-5 '>
                         {
                             WHAT_WE_DO_ARRAY.map((item) => (
-                                <div className={`bg-primary text-accent w-[300px] mb-6  space-y-5  px-5 py-4  rounded-[20px] flex flex-col justify-center items-center`}>
+                                <div className={`bg-primary text-accent min-w-[150px] w-[300px] mb-6  space-y-5  px-5 py-4  rounded-[20px] flex flex-col justify-center items-center`}>
                                     <Image
                                         src={item.icon}
                                         width={3000}
@@ -136,7 +136,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            <div className=' mt-20 flex flex-col items-center space-y-11 justify-center '>
+            <div className=' container w-full mt-4 lg:mt-20 flex flex-col items-center space-y-11 justify-center '>
                 <h1 className='text-4xl'>HealthCare Presences</h1>
                 <Image
                     src={"/images/map.svg"}

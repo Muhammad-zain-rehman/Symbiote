@@ -4,7 +4,7 @@ import AppsAndPortalsDevelopment from '@/client_pages/ServicesDetails/AppsAndPor
 const ServicesPage = () => {
     return (
         <>
-            <AppsAndPortalsDevelopment index={7}/>
+            <AppsAndPortalsDevelopment index={1}/>
         </>
     )
 }

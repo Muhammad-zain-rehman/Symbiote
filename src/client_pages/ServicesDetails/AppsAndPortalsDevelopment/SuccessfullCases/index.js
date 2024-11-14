@@ -5,7 +5,7 @@ const SuccessfullCases = () => {
     return (
         <div className='container'>
             <h1 className='text-4xl font-bold mb-16  text-primary text-center'>Our expertise converts into<br />successful cases</h1>
-            <div className='  flex justify-center space-x-5'>
+            <div className='  flex flex-col md:flex-row justify-center items-center gap-y-5 gap-x-5'>
                 {
                     [1, 2, 3].map((item) => (
                         <div className=' rounded-xl  text-center flex flex-col justify-center items-center text-accent bg-secondary w-[300px] py-8'>
