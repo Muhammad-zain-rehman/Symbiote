@@ -16,7 +16,7 @@ const Footer = () => {
 
       <div className='container space-y-12'>
         <div className=' flex flex-wrap flex-col md:flex-row text-sm justify-between items-center gap-y-5'>
-            <Image src={"/images/logo.svg"} className='w-[120px]' alt='footer-logo'  width={5000} height={5000} />
+            <Image src={"/images/logo.svg"} className='w-[120px] h-[50px]' alt='footer-logo'  width={5000} height={5000} />
 
 
             <div className='flex space-x-4 lg:space-x-8 text-sm'>
@@ -41,26 +41,25 @@ const Footer = () => {
 
         </div>
         <div className='text-accent text-sm  lg:w-[35%]'>
-          Symbiote is a global services provider for the life sciences industry, specializing in MarTech solutions.
-          We offer end-to-end, tailor-made strategies to build omnichannel excellence from any point and level of digital maturity.
-          Our team of industry professionals is dedicated to implementing best-in-class omnichannel projects and communication strategies for the global pharmaceutical market.
+        We are a forward-thinking Digital Marketing Solutions provider, combining marketing expertise with cutting-edge digital technology. Our innovative solutions are designed to drive marketing growth for businesses of all sizes and at any stage of digital transformation.
           {/* By leveraging our expertise, we ensure your brand achieves digital maturity and excels in engaging healthcare professionals and patients worldwide.
           Partner with Symbiote to transform your digital marketing efforts and drive impactful results in the pharma sect */}
         </div>
 
         <div className='flex flex-wrap justify-between'>
-          <div className='text-accent flex flex-wrap gap-x-10'>
-            <div className="flex gap-x-3 items-center">
+          <div className='text-accent flex flex-wrap gap-x-10 '>
+            <div className="flex gap-x-3 items-center border-b py-2 border-b-white ">
               <MdEmail className="text-white text-lg" />
-              <span className=''>hello@symbiote.com</span>
+              <span className=''>hello@squareup.com</span>
             </div>
-            <div className="flex gap-x-3 items-center">
+            <div className="flex gap-x-3 items-center border-b py-2 border-b-white ">
               <FaPhone className="text-white text-md" />
-              <span>+913228001411</span>
+              <span>+91 91813 23 2309</span>
             </div>
-            <div className="flex gap-x-3 items-center">
+            <div className="flex gap-x-3 items-center border-b py-2 border-b-white ">
               <IoLocationSharp className="text-white text-lg" />
-              <spna>Auckland, GB #102, USA</spna>
+              {/* <span>Auckland, GB #102, USA</span> */}
+              <span>Somewhere in the World</span>
             </div>
           </div>
           <div className='text-accent text-sm'>© 2023 SquareUp. All rights reserved.</div>

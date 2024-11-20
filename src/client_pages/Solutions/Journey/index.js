@@ -53,10 +53,10 @@ const Journey = () => {
             </div>
 
 
-            <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center items-center xl:items-start container xl:w-[100%]'>
+            <div className='relative grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center items-center xl:items-start container xl:w-[100%]'>
                 {
                     STEPS.map((item, index) => (
-                        <div className={` ${index===0?"bg-secondary rounded-3xl xl:rounded-r-3xl xl:rounded-l-none text-accent":""} py-10 px-10 h-[300px] cursor-pointer hover:shadow-2xl hover:rounded-3xl  w-[350px]  `}>
+                        <div className={` ${index===0?"bg-secondary rounded-3xl xl:rounded-r-3xl xl:rounded-l-none text-accent":""} py-10 px-10 h-[300px] xl:h-[350px] cursor-pointer hover:shadow-2xl hover:rounded-3xl w-[300px]  xl:w-[350px]  `}>
                             <div  className=' text-left mb-6 text-2xl font-bold'>{item.title}</div>
                             <ul className=' list-disc '>
 

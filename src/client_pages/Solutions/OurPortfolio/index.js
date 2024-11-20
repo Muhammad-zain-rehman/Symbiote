@@ -8,9 +8,9 @@ const OurPortfolio = () => {
         <div className='container relative w-fit flex justify-center mx-auto'>
             <Image
             src={"/images/our_portfolio.png"}
-            width={1000}
-            height={1000}
-            className='w-[500px] mx-auto'
+            width={500}
+            height={500}
+            className='w-[500px] max-h-[51px] mx-auto'
             alt='our-portfolio'
 
             />
@@ -25,7 +25,7 @@ const OurPortfolio = () => {
                     width={2000}
                     height={2000}
                     alt='dummy'
-                    className=' mx-auto rounded-md'
+                    className=' mx-auto rounded-md aspect-[20/9] object-cover w-full'
                 />
                 <Image
                     src={"/icons/video_icon.svg"}

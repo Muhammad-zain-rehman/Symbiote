@@ -8,7 +8,7 @@ const CheckField = ({ form, field, label_text }) => {
             <Field type="checkbox" className="w-8 h-8 " name={field} />
 
             <p className="text-xs text-red-500">
-                <ErrorMessage name={field} />
+                {/* <ErrorMessage name={field} /> */}
             </p>
         </>
     )

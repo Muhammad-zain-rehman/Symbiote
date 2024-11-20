@@ -1,6 +1,8 @@
 import React from 'react'
 import './style.css'
 import Image from 'next/image'
+import {motion} from 'framer-motion'
+import { UP_ANIMATION } from '@/utils'
 
 
 
@@ -41,7 +43,7 @@ const ARRAY = [
 const WhatClientSay = () => {
     return (
         <>
-            <div className='lg:flex min-h-[600px] mt-20  px-[10%] bg-cover bg-no-repeat bg-center ' style={{
+            <motion.div {...UP_ANIMATION} className='lg:flex min-h-[600px] mt-20  px-[10%] bg-cover bg-no-repeat bg-center ' style={{
                 background: `url(/images/landing_background.svg)`
             }}>
                 <div className='lg:w-1/2 text-white flex flex-col justify-center  '>
@@ -78,7 +80,7 @@ const WhatClientSay = () => {
                         ))
                     }
                 </div>
-            </div>
+            </motion.div>
 
         </>
     )

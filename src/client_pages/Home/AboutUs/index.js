@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 import WhatClientSay from '../WhatClientSay'
+import { UP_ANIMATION } from '@/utils'
+import {motion} from 'framer-motion'
 
 const ABOUT_US_ARR = [
     {
@@ -37,7 +39,7 @@ const WHAT_WE_DO_ARRAY = [
 const AboutUs = () => {
     return (
         <>
-            <div className=' container '>
+            <motion.div {...UP_ANIMATION} className=' container '>
                 <div className=' text-secondary mt-10'>
                     <h1 className='text-4xl font-semibold'>Who We Are</h1>
                     <p className='text-lg mt-5'>
@@ -52,14 +54,14 @@ const AboutUs = () => {
                 </div>
                 <div className='lg:flex justify-between lg:space-x-10 items-start my-10'>
                     <div className='lg:w-[40%] relative '>
-                        <div className=' grid grid-cols-2 gap-5 mt-5 lg:ml-[3%]'>
+                        <div className=' grid grid-cols-1 sm:grid-cols-2 gap-5 mt-5 lg:ml-[3%]'>
                             {
                                 ABOUT_US_ARR.map((item) => (
                                     <div className={`bg-primary text-accent  space-y-5  px-5 py-4  rounded-[20px] flex flex-col justify-center items-center`}>
                                         <Image
                                             src={item.icon}
-                                            width={3000}
-                                            height={4000}
+                                            width={80}
+                                            height={80}
                                             className={`w-20`}
                                         />
                                         <h2 className=' font-medium text-center'>{item.title}</h2>
@@ -67,12 +69,12 @@ const AboutUs = () => {
                                 ))
                             }
                         </div>
-                        <Image
-                            src={"/images/about_us_bg.svg"}
-                            width={2000}
-                            height={2000}
-                            className='w-32 absolute z-[-1] top-0 left-0'
-                        />
+                            <Image
+                                src={"/images/about_us_bg.svg"}
+                                width={2000}
+                                height={2000}
+                                className='w-32 absolute z-[-1] top-0 left-0'
+                            />
                     </div>
                     <div className=' lg:w-[50%] text-secondary mt-5'>
                         <h1 className='text-4xl font-semibold'>About Us</h1>
@@ -113,14 +115,14 @@ const AboutUs = () => {
                             Learn More
                         </button>
                     </div>
-                    <div className=' lg:w-[30%]  relative flex lg:flex-col justify-center items-center gap-x-5 lg:justify-end lg:items-end pt-5 pr-5 '>
+                    <div className=' lg:w-[30%]  relative flex flex-wrap sm:flex-nowrap lg:flex-col justify-center items-center gap-x-5 lg:justify-end lg:items-end pt-5 pr-5 '>
                         {
                             WHAT_WE_DO_ARRAY.map((item) => (
                                 <div className={`bg-primary text-accent min-w-[150px] w-[300px] mb-6  space-y-5  px-5 py-4  rounded-[20px] flex flex-col justify-center items-center`}>
                                     <Image
                                         src={item.icon}
-                                        width={3000}
-                                        height={4000}
+                                        width={80}
+                                        height={80}
                                         className={`w-20`}
                                     />
                                     <h2 className=' font-medium text-center'>{item.title}</h2>
@@ -129,26 +131,26 @@ const AboutUs = () => {
                         }
                         <Image
                             src={"/images/about_us_bg.svg"}
-                            width={2000}
-                            height={2000}
+                            width={200}
+                            height={200}
                             className='w-32 absolute z-[-1] top-0 right-0'
                         />
                     </div>
                 </div>
-            </div>
-            <div className=' container w-full mt-4 lg:mt-20 flex flex-col items-center space-y-11 justify-center '>
+            </motion.div>
+            <motion.div {...UP_ANIMATION} className=' container w-full mt-4 lg:mt-20 flex flex-col items-center space-y-11 justify-center '>
                 <h1 className='text-4xl'>HealthCare Presences</h1>
                 <Image
                     src={"/images/map.svg"}
                     className=' w-1/2'
-                    width={2000}
+                    width={612}
                     height={2000}
 
                 />
                 <button className=' btn btn-primary'>
                     Learn More
                 </button>
-            </div>
+            </motion.div>
             <WhatClientSay />
 
         </>

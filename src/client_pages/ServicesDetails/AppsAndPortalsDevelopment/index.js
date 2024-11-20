@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 import WhoWeAre from './WhoWeAre'
@@ -7,6 +8,8 @@ import OnlineLearning from './OnlineLearning'
 import SuccessfullCases from './SuccessfullCases'
 import AppProcess from './AppProcess'
 import VisevenExpertise from './VisevenExpertise'
+import { motion } from 'framer-motion'
+import { UP_ANIMATION } from '@/utils'
 
 
 const data = [
@@ -47,7 +50,7 @@ const data = [
     },
     {
         title: 'Apps and Portals Development from',
-        description: 'Symbiote is your go-to partner for cutting-edge digital marketing in the pharmaceutical and life sciences sectors. We offer a comprehensive suite of services, from virtual reality technology to mobile app development,',
+        description: 'Symbiote is your go-to partner for cutting-edge digital marketing in the pharmaceutical and life sciences sectors. We offer a comprehensive suite of services, from virtual reality technology to mobile app development.',
         image: '/images/mobile_apps_main.svg'
     },
     
@@ -60,8 +63,8 @@ const AppsAndPortalsDevelopment = ({index}) => {
     // mobile_apps_main.svg
     return (
         <>
-            <div className='bg-primary'>
-                <div className='text-white min-h-[450px] container  relative  flex justify-between '>
+            <div  className='bg-primary'>
+                <motion.div {...UP_ANIMATION} className='text-white min-h-[450px] container  relative  flex justify-between '>
                     <div className='flex flex-col justify-center lg:w-1/2 pt-8 pb-14'>
                         <h1 className='text-5xl font-bold'>{title}</h1>
                         <div className='text-base mt-8'>
@@ -72,7 +75,8 @@ const AppsAndPortalsDevelopment = ({index}) => {
                             src={image}
                             width={1000}
                             height={1000}
-                            className=""
+                            className="w-[550px]"
+                            priority
                         />
                     </div>
                         <div className='mt-10 flex justify-center items-center lg:block'>
@@ -86,24 +90,26 @@ const AppsAndPortalsDevelopment = ({index}) => {
                             src={image}
                             width={1000}
                             height={1000}
-                            className="w-3/4 flex-shrink-0"
+                            className="w-3/4 flex-shrink-0 xl:w-[550px]"
+                            priority
+
                         />
                     </div>
-                </div>
+                </motion.div>
             </div>
-            <div className='py-20'>
+            <motion.div  {...UP_ANIMATION} className='py-20'>
                 <AppProcess />
-            </div>
-            <div className=''>
+            </motion.div>
+            <motion.div {...UP_ANIMATION}  className=''>
                 <VisevenExpertise/>
-            </div>
-            <div className='py-10 md:py-20'>
+            </motion.div>
+            <motion.div {...UP_ANIMATION}  className='py-10 md:py-20'>
                 <WhoWeAre />
-            </div>
-            <div className='py-10 md:py-20'>
+            </motion.div>
+            <motion.div {...UP_ANIMATION}  className='py-10 md:py-20'>
                 <WinCompetition/>
-            </div>
-            <div className=' h-[400px] flex flex-col justify-center  text-xl md:text-3xl font-bold text-[#262626] text-center bg-cover'
+            </motion.div>
+            <motion.div {...UP_ANIMATION}  className=' h-[400px] flex flex-col justify-center  text-xl md:text-3xl font-bold text-[#262626] text-center bg-cover'
                 style={{
                     backgroundImage: `url(/images/services/apps_portal_development/pharma-marketing.svg)`
                 }}
@@ -112,16 +118,16 @@ const AppsAndPortalsDevelopment = ({index}) => {
                 Create a perfect web project for your<br/> pharma marketing campaign
                 </p>
 
-            </div>
+            </motion.div>
             {/* <div>
                 <Expertise/>
             </div> */}
-            <div className='pt-10 pb-24 md:pb-32'>
+            <motion.div {...UP_ANIMATION} className='pt-10 lg:pt-20 pb-24 md:pb-32'>
                 <OnlineLearning/>
-            </div>
-            <div className='lg:pt-10 pb-32'>
+            </motion.div>
+            <motion.div {...UP_ANIMATION}  className='lg:pt-10 pb-32'>
                 <SuccessfullCases/>
-            </div>
+            </motion.div>
 
         </>
     )

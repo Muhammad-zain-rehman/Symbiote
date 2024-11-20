@@ -1,5 +1,7 @@
 import { MdEmail } from "react-icons/md"
 
+
+export const BASE_URL="http://13.50.141.184/"
 export const BOOLEAN_OPTIONS =[
     {
         label:"Yes",

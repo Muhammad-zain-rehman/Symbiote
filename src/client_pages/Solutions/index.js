@@ -11,22 +11,23 @@ import { CONTENT_FORMATS, OUR_SERVICES } from '@/constants'
 import OurPortfolio from './OurPortfolio'
 import Journey from './Journey'
 import WhatClientSay from './WhatClientSay'
+import { UP_ANIMATION } from '@/utils'
 
 const ARR = [
   {
-    title: "AI Solutions",
+    title: "Global alignment and optimization",
     src: "/icons/ai_solutions.svg",
-    description: "Help us build a school in a remote village in Africa"
+    description: "In today’s fast-paced digital landscape, a pharmaceutical digital marketing company must prioritize global consistency and optimization to stay ahead. "
   },
   {
-    title: "Content Production Hub",
+    title: "Strategic Execution",
     src: "/icons/content_hub.svg",
-    description: "Help us build a school in a remote village in Africa"
+    description: "At Symbiote, we excel in delivering fast and efficient end-to-end content solutions by decoupling production from creative processes."
   },
   {
-    title: "Omnichannel Marketing",
+    title: "Relentless Enhancement",
     src: "/icons/omnichal_marketing.svg",
-    description: "Help us build a school in a remote village in Africa"
+    description: "we are committed to continuous excellence by leveraging insights from content performance tracking and analysis. Our approach optimizes content production, campaign management, and customer experience (CX)"
   },
   {
     title: "Digital Composition",
@@ -111,7 +112,7 @@ const HomePage = () => {
   return (
     <>
       <div className='bg-primary'>
-        <div className='text-white min-h-[450px] container  relative  lg:flex '>
+        <motion.div {...UP_ANIMATION} className='text-white min-h-[450px] container  relative  lg:flex '>
           <div className='lg:w-1/2 pt-8 lg:pb-14'>
             <h1 className='hidden lg:block text-5xl font-bold'>DIGITAL CONTENT<br /> FACTORY</h1>
             <h1 className='lg:hidden text-center text-5xl font-bold'>DIGITAL CONTENT FACTORY</h1>
@@ -133,33 +134,96 @@ const HomePage = () => {
           <div className='lg:w-1/2'>
             <Image
               src={"/images/map-white.svg"}
-              className=''
+              className='h-[300px] lg:h-[492px]'
               width={1000}
               height={1000}
             />
           </div>
 
 
-        </div>
+        </motion.div>
 
 
       </div>
 
       <div className='container'>
-      <div className='flex gap-x-5 pt-5 rounded-b-2xl bg-[#262626] relative'>
-          <div className='bg-[#262626] py-3 px-8 min-w-[265px] text-white rounded-full text-sm absolute -top-5  left-1/2 -translate-x-1/2'>
+        <div className='flex gap-x-5 pt-5 rounded-b-2xl bg-[#262626] relative h-[130px]'>
+          <div className='bg-[#262626] py-3 px-8 min-w-[265px] text-white rounded-full text-sm absolute -top-5 left-1/2 -translate-x-1/2'>
             Trusted By 250+ Companies
           </div>
-          <div className='flex flex-wrap w-full justify-evenly'>
-          <Image src={"/images/zapier.svg"} width={4000} height={4000} className='w-56' />
-          <Image src={"/images/spotify.svg"} width={4000} height={4000} className='w-56' />
-          <Image src={"/images/slack.svg"} width={4000} height={4000} className='w-56' />
-          <Image src={"/images/amazon.svg"} width={4000} height={4000} className='w-56' />
-          <Image src={"/images/adobe.svg"} width={4000} height={4000} className='w-56' />
+
+          <div class="overflow-hidden">
+
+            <div class="flex -mx-4 img-ticker">
+
+              <Image
+                src={"/images/zapier.svg"}
+                width={4000}
+                height={4000}
+                className='w-64  mx-4 self-start flex-none'
+              />
+              <Image
+                src={"/images/spotify.svg"}
+                width={4000}
+                height={4000}
+                className='w-64  mx-4 self-start flex-none'
+              />
+              <Image
+                src={"/images/slack.svg"}
+                width={4000}
+                height={4000}
+                className='w-64  mx-4 self-start flex-none'
+              />
+              <Image
+                src={"/images/amazon.svg"}
+                width={4000}
+                height={4000}
+                className='w-64  mx-4 self-start flex-none'
+              />
+              <Image
+                src={"/images/adobe.svg"}
+                width={4000}
+                height={4000}
+                className='w-64  mx-4 self-start flex-none'
+              />
+
+
+              <Image
+                src={"/images/zapier.svg"}
+                width={4000}
+                height={4000}
+                className='w-64  mx-4 self-start flex-none'
+              />
+              <Image
+                src={"/images/spotify.svg"}
+                width={4000}
+                height={4000}
+                className='w-64  mx-4 self-start flex-none'
+              />
+              <Image
+                src={"/images/slack.svg"}
+                width={4000}
+                height={4000}
+                className='w-64  mx-4 self-start flex-none'
+              />
+              <Image
+                src={"/images/amazon.svg"}
+                width={4000}
+                height={4000}
+                className='w-64  mx-4 self-start flex-none'
+              />
+              <Image
+                src={"/images/adobe.svg"}
+                width={4000}
+                height={4000}
+                className='w-64  mx-4 self-start flex-none'
+              />
+
+            </div>
           </div>
         </div>
 
-        <div className='mt-10 md:my-20 space-y-5'>
+        <motion.div {...UP_ANIMATION}  className='mt-10 md:my-20 space-y-5'>
           <div className='text-center  text-4xl mt-10 font-semibold'>
             Why Pharma needs Digital Content <br />
             Factory?
@@ -172,16 +236,16 @@ const HomePage = () => {
 
           <div className='mx-auto flex justify-center lg:sm-container'>
             <div className='py-10 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10'>
-              <ServicesCard item={ARR[0]} />
-              <ServicesCard item={ARR[1]} />
-              <ServicesCard custom_class={"bg-[#F7F7F7] h-[300px]"} item={ARR[2]} />
+              <ServicesCard custom_class={"bg-primary text-accent h-[300px] space-y-5 text-center h-[350px]"}item={ARR[0]} />
+              <ServicesCard custom_class={"bg-primary text-accent h-[300px] space-y-5 h-[350px]"} item={ARR[1]} />
+              <ServicesCard custom_class={"bg-[#F7F7F7] h-[350px]"} item={ARR[2]} />
 
             </div>
           </div>
 
-        </div>
+        </motion.div>
       </div>
-      <div className=' min-h-[600px] flex flex-col  justify-center items-center bg-cover bg-no-repeat text-accent bg-primary py-10 md:py-0'
+      <motion.div {...UP_ANIMATION}  className=' min-h-[600px] flex flex-col  justify-center items-center bg-cover bg-no-repeat text-accent bg-primary py-10 md:py-0'
         style={{
           backgroundImage: `url(/images/landing_background2.svg)`
         }}
@@ -193,14 +257,14 @@ const HomePage = () => {
           At Symbiote, we provide custom solutions and services actively <br /> used by industry leaders across the globe.
         </p>
         <Slider />
-      </div>
+      </motion.div>
       <div>
-        <div className='py-10 md:py-20 container'>
+        <motion.div {...UP_ANIMATION}  className='py-10 md:py-20 container'>
           <h1 className='text-center pb-10 md:pb-20 font-semibold text-4xl'>
             Digital Content Factory works with<br />numerous content formats
           </h1>
           <div className=' relative p-[3%]'>
-            <div className='grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-5 md:gap-10'>
+            <div className='grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-5 md:gap-10'>
               {
                 CONTENT_FORMATS.map((item, index) => (
                   <div className='bg-primary h-40 text-accent flex flex-col justify-start hover:cursor-pointer transition-all duration-150 delay-75 shadow-xl hover:-translate-y-4 items-center text-lg text-center rounded-xl'>
@@ -231,9 +295,9 @@ const HomePage = () => {
               Get A consulation
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <div>
+      <motion.div {...UP_ANIMATION} >
         <h1 className='text-4xl font-semibold text-center'>Benefits of DCF implementation<br />for business</h1>
         <div className=' container gap-10 my-16  sm:grid-cols-2 grid md:grid-cols-3'>
           {
@@ -260,11 +324,15 @@ const HomePage = () => {
           }
 
         </div>
-      </div>
-      <OurPortfolio />
-      <Journey/>
-      <WhatClientSay/>
-      <RecentBlogs />
+      </motion.div>
+      <motion.div {...UP_ANIMATION}  ><OurPortfolio /></motion.div>
+      <motion.div {...UP_ANIMATION} ><Journey/></motion.div>
+      <motion.div {...UP_ANIMATION} ><WhatClientSay/></motion.div>
+      <motion.div {...UP_ANIMATION} > <RecentBlogs /></motion.div>
+
+      
+      
+     
     </>
   )
 }

@@ -41,7 +41,7 @@ const ARRAY = [
 const WhatClientSay = () => {
     return (
         <>
-            <div className='lg:flex min-h-[600px]  px-[10%] bg-cover bg-no-repeat bg-center ' style={{
+            <div className='relative lg:flex min-h-[600px]  px-[10%] bg-cover bg-no-repeat bg-center xl:-mt-[40px] z-[10]' style={{
                 background: `url(/images/landing_background.svg)`
             }}>
                 <div className='lg:w-1/2 text-white flex flex-col justify-center  '>

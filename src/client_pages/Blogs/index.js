@@ -1,7 +1,9 @@
+'use client'
 import ContactUsFrom from '@/components/ContactForm/Form'
 import Image from 'next/image'
 import React from 'react'
-
+import { motion } from 'framer-motion'
+import { UP_ANIMATION } from '@/utils'
 
 const DATA = [
     {
@@ -46,27 +48,55 @@ const DATA = [
 const Blogs = () => {
     return (
         <>
-            <div className='bg-secondary h-[400px] py-2'>
+            <div  className='bg-secondary h-[400px] py-2'>
                 <div className='  container rounded-b-3xl h-full  bg-center bg-cover bg-no-repeat flex flex-col justify-center items-center'
-                style={{
-                    backgroundImage:`url(/images/Group_21387.png)`
-                }}
+                    style={{
+                        backgroundImage: `url(/images/Group_21387.png)`
+                    }}
                 >
-                    
-                        <h1 className='text-[30px] md:text-[50px] text-center font-bold text-white leading-tight'>Our Pharma Marketing </h1>
-                        <h2 className='text-[30px] md:text-[50px] text-center font-bold text-white leading-tight mb-4'>Services in Action</h2>
+                    <motion.div {...UP_ANIMATION}>
+                        
+                    <h1 className='text-[30px] md:text-[50px] text-center font-bold text-white leading-tight'>Our Pharma Marketing </h1>
+                    <h2 className='text-[30px] md:text-[50px] text-center font-bold text-white leading-tight mb-4'>Services in Action</h2>
 
-                      
-                        <div className='text-center  w-[80%] mx-auto  text-[#E6E6E6] text-md md:text-lg'>
-                            Unlock your content with the help of Viseven. We provide custom solutions and services actively used by the top 50 Pharma and Life Sciences companies in over 50 countries worldwide
-                        </div>
-                    
+
+                    <div className='text-center  w-[80%] mx-auto  text-[#E6E6E6] text-md md:text-lg'>
+                        Unlock your content with the help of Viseven. We provide custom solutions and services actively used by the top 50 Pharma and Life Sciences companies in over 50 countries worldwide
+                    </div>
+                    </motion.div>
+
                 </div>
             </div>
 
 
             <div className=' pb-10 pt-20 lg:py-20'>
-                <div className=' container'>
+                <motion.div
+                    initial={{
+                        opacity: 0,
+                        y: 50,
+                        scale: 0.95
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        y: 0,
+                        scale: 1
+                    }}
+                    exit={{
+                        opacity: 0,
+                        y: -50,
+                        scale: 1
+                    }}
+                    viewport={{
+                        once: true,
+                        amount: 0
+                    }}
+                    transition={{
+                        type: "spring",
+                        damping: 20,
+                        stiffness: 70
+                    }}
+                    className="container"
+                >
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
                         {
                             DATA.map((item) => (
@@ -82,14 +112,14 @@ const Blogs = () => {
                             ))
                         }
                     </div>
-                </div>
-                <div className='mt-12 lg:mt-24'>
+                </motion.div>
+                <motion.div {...UP_ANIMATION} className='mt-12 lg:mt-24'>
                     <h1 className='text-3xl md:text-5xl text-center font-bold container'>Connect with Us for Personalized<br /> Support</h1>
 
                     <div className='mt-10 lg:mt-20'>
                         <ContactUsFrom />
                     </div>
-                </div>
+                </motion.div>
             </div>
 
         </>

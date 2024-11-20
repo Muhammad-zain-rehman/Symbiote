@@ -24,7 +24,7 @@ const VisevenExpertise = () => {
                         </ul>
                     </div>
                     <div className='flex max-w-[350px] lg:w-[35%] items-end justify-end mx-auto lg:mx-0'>
-                        <Image src={'/Images/services/apps_portal_development/clm_app.png'} width={5000} height={5000} />
+                        <Image src={'/Images/services/apps_portal_development/clm_app.png'} width={300} height={300}  className='w-[300px]' priority/>
 
                     </div>
                 </div>
@@ -59,9 +59,11 @@ const VisevenExpertise = () => {
                         <div className="absolute bottom-0 right-0   w-[70%] sm:w-[50%] lg:w-[80%] z-0">
                             <Image
                                 src={'/Images/services/apps_portal_development/book_flight.png'}
-                                width={5000}
-                                height={5000}
+                                width={500}
+                                height={500}
                                 alt="App Image"
+                                className="w-[500px] object-contain"
+                                priority
                             />
                         </div>
                     </div>
@@ -82,7 +84,7 @@ const VisevenExpertise = () => {
                         </ul>
                     </div>
                     <div className='flex max-w-[350px] lg:w-[35%] items-end justify-end mx-auto lg:mx-0'>
-                        <Image src={'/Images/services/apps_portal_development/patient_app.png'} width={5000} height={5000} />
+                        <Image src={'/Images/services/apps_portal_development/patient_app.png'} width={500} height={500} className="w-[500px] object-contain" priority/>
 
                     </div>
 

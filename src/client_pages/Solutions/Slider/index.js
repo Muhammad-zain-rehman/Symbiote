@@ -1,26 +1,32 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-
+import { UP_ANIMATION } from '@/utils'
 const MAIN_SECTION_ARRY = [
     {
         id: 1,
-        title: "Modular Approach",
+        title: "Consulting",
         description: <>
-            Our adaptive content strategy is revolutionizing digital marketing for Pharma <br />and Life Sciences by enabling rapid, compliant content production at scale
+            We provide consulting on :<br/>
+            <ul className='list-disc'>
+                <li>strategic content planning</li>
+                <li>development and standardization;</li>
+                <li>design best practices; </li>
+                <li>content modularization, etc. to enhance customer experience and engagement in a cost effective way. </li>
+            </ul>
         </>
     },
     {
         id: 2,
-        title: "Omnichannel Marketing",
+        title: "Authoring & Update",
         description: <>
-            Our adaptive content strategy is revolutionizing digital marketing for Pharma <br />and Life Sciences by enabling rapid, compliant content production at scale
+          Medical writing service and authoring of new content pieces. Editing of existing digital assets with minor changes - localization, update/ switch/remove some parts, but structure remain original (changes up to 50% of asset)
         </>
     },
     {
         id: 3,
-        title: "AR Services",
+        title: "Design",
         description: <>
-            Our adaptive content strategy is revolutionizing digital marketing for Pharma <br />and Life Sciences by enabling rapid, compliant content production at scale
+          Development of digital asset layouts based on Customer's guidelines, brand books and specifications.
         </>
     },
 
@@ -82,28 +88,29 @@ const Slider = () => {
             <AnimatePresence mode='wait'>
                 <motion.h1
                     key={`${activeSlide.title}_h1`}
-                    initial={{
-                        // y: "-100%",
-                        opacity: 0
-                    }}
-                    animate={{
-                        // y: "0%",
-                        opacity: 1,
-                        transition: {
-                            type: "tween",
-                            duration: 0.5,
-                            // delay: 0.3
-                        }
-                    }}
-                    exit={{
-                        opacity: 0,
-                        // y: "-100%",
-                        transition: {
-                            type: "tween",
-                            duration: 0.5
+                    {...UP_ANIMATION}
+                    // initial={{
+                    //     // y: "-100%",
+                    //     opacity: 0
+                    // }}
+                    // animate={{
+                    //     // y: "0%",
+                    //     opacity: 1,
+                    //     transition: {
+                    //         type: "tween",
+                    //         duration: 0.5,
+                    //         // delay: 0.3
+                    //     }
+                    // }}
+                    // exit={{
+                    //     opacity: 0,
+                    //     // y: "-100%",
+                    //     transition: {
+                    //         type: "tween",
+                    //         duration: 0.5
 
-                        }
-                    }}
+                    //     }
+                    // }}
                     className='text-4xl text-white font-semibold text-center'>
                     {activeSlide.title}
 
@@ -133,7 +140,7 @@ const Slider = () => {
 
                         }
                     }}
-                    className='text-white font-light text-center text-md  mt-8'>
+                    className='text-white font-light w-[80%] sm:w-[60%] md:w-[40%] mx-auto text-md  mt-8'>
                     {activeSlide.description}
                 </motion.div>
 

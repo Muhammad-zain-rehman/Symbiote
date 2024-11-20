@@ -78,7 +78,7 @@ const AppProcess = () => {
                 
                 </div>
                 <div className=' lg:w-[35%]  relative flex justify-center items-center gap-x-5 lg:justify-end lg:items-end '>
-                <Image src={'/images/services/Symbiote-Expertise.jpg'} width={5000} height={5000}/>
+                <Image src={'/images/services/Symbiote-Expertise.jpg'} width={5000} height={5000} className='w-[450px]' priority/>
 
                 </div>
             
