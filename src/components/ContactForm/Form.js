@@ -32,11 +32,11 @@ const ContactUsForm = () => {
     job_title: yup.string().required('Required'),
     company: yup.string().required('Required'),
     industry: yup.string().required('Required'),
-    // country: yup.string().required('Required'),
+    country: yup.object().nullable().required('Required'),
     is_verified: yup.boolean().oneOf([true], 'Required'),
   });
 
-  const handleSubmit = async (values) => {
+  const handleSubmit = async (values,{setSubmitting, resetForm}) => {
     setLoading(true);
     const payload = {
       name: values.name,
@@ -52,6 +52,7 @@ const ContactUsForm = () => {
       toast.success('Form submitted successfully!', {
         style: { backgroundColor: '#1d1d1d', color: 'white' }, 
       });
+      resetForm()
     } catch (error) {
       console.error('API Error:', error);
       toast.error('There was an error submitting the form.', {
@@ -59,6 +60,7 @@ const ContactUsForm = () => {
       });
     } finally {
       setLoading(false);
+      
     }
   };
 
