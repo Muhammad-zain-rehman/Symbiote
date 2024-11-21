@@ -71,9 +71,9 @@ const AppProcess = () => {
             
             <div className='py-10 lg:flex justify-between'>
                 <div className='lg:w-[55%] mt-4'>
-                    <h1 className='text-4xl font-semibold mb-10'>Symbiote Expertise</h1>
+                    <h1 className='text-4xl font-semibold mb-10'>Symbiotic Expertise</h1>
                     <div className='text-xl font-light' >
-                    Symbiote is a global services provider for the life sciences industry, specializing in advanced marketing technologies. We offer end-to-end, tailor-made strategies to build omnichannel excellence from any point and level of digital maturity. Our team of experts is dedicated to implementing best-in-class omnichannel projects and communication strategies for the global pharmaceutical market.By leveraging our expertise, we ensure your brand achieves digital maturity and excels in engaging healthcare professionals and patients worldwide. Partner with Symbiote to transform your digital marketing efforts and drive impactful results in the pharma sector.
+                    Symbiotic is a global services provider for the life sciences industry, specializing in advanced marketing technologies. We offer end-to-end, tailor-made strategies to build omnichannel excellence from any point and level of digital maturity. Our team of experts is dedicated to implementing best-in-class omnichannel projects and communication strategies for the global pharmaceutical market.By leveraging our expertise, we ensure your brand achieves digital maturity and excels in engaging healthcare professionals and patients worldwide. Partner with Symbiotic to transform your digital marketing efforts and drive impactful results in the pharma sector.
                     </div>
                 
                 </div>

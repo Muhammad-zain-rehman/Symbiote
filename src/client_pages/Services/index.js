@@ -52,7 +52,9 @@ const Services = () => {
                     </div>
 
                     <div className='flex justify-center'>
-                        <button className='btn bg-white'>Additional Insights</button>
+                        <Link href={"/blogs"}>
+                            <button className='btn bg-white'>Additional Insights</button>
+                        </Link>
                     </div>
                 </div>
             </motion.div>

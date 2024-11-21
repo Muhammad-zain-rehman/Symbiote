@@ -47,7 +47,7 @@ const Journey = () => {
                 <h1 className='lg:hidden text-4xl font-semibold'>Pharma digital transformation journey to future-ready smart content</h1>
 
                 <p className='py-8'>
-                    symbiote offers a holistic approach from the content operational foundation
+                Symbiotic offers a holistic approach from the content operational foundation
                     development to the seamless adoption of innovation
                 </p>
             </div>

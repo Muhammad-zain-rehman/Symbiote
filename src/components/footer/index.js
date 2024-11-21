@@ -43,26 +43,26 @@ const Footer = () => {
         <div className='text-accent text-sm  lg:w-[35%]'>
         We are a forward-thinking Digital Marketing Solutions provider, combining marketing expertise with cutting-edge digital technology. Our innovative solutions are designed to drive marketing growth for businesses of all sizes and at any stage of digital transformation.
           {/* By leveraging our expertise, we ensure your brand achieves digital maturity and excels in engaging healthcare professionals and patients worldwide.
-          Partner with Symbiote to transform your digital marketing efforts and drive impactful results in the pharma sect */}
+          Partner with Symbiotic to transform your digital marketing efforts and drive impactful results in the pharma sect */}
         </div>
 
         <div className='flex flex-wrap justify-between'>
           <div className='text-accent flex flex-wrap gap-x-10 '>
             <div className="flex gap-x-3 items-center border-b py-2 border-b-white ">
               <MdEmail className="text-white text-lg" />
-              <span className=''>hello@squareup.com</span>
+              <span className=''>Kashi.novartis@gmail.com</span>
             </div>
             <div className="flex gap-x-3 items-center border-b py-2 border-b-white ">
               <FaPhone className="text-white text-md" />
-              <span>+91 91813 23 2309</span>
+              <span>+973 3437 0033</span>
             </div>
             <div className="flex gap-x-3 items-center border-b py-2 border-b-white ">
               <IoLocationSharp className="text-white text-lg" />
               {/* <span>Auckland, GB #102, USA</span> */}
-              <span>Somewhere in the World</span>
+              <span>Bahrain</span>
             </div>
           </div>
-          <div className='text-accent text-sm'>© 2023 SquareUp. All rights reserved.</div>
+          <div className='text-accent text-sm'>© 2023 Symbiotic. All rights reserved.</div>
         </div>
       </div>
 

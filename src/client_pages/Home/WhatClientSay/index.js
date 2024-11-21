@@ -51,7 +51,7 @@ const WhatClientSay = () => {
                     <h1 className='hidden lg:block text-4xl font-semibold text-left  '>What our Clients say <br />About Us</h1>
                     <h1 className='lg:hidden text-4xl font-semibold text-left mt-10'>What our Clients say About Us</h1>
                     <p className='mt-10 text-left lg:w-1/2'>
-                        At SquareUp, we take pride in delivering exceptional digital products and services that drive success
+                        At Symbiotic, we take pride in delivering exceptional digital products and services that drive success
                         for our clients. Here's what some of our satisfied clients have to say about their experience working with us
                     </p>
                 </div>

@@ -5,6 +5,7 @@ import React from 'react'
 import InfiniteLooper from './InfiniteLooper'
 import { motion } from 'framer-motion'
 import { UP_ANIMATION } from '@/utils'
+import Link from 'next/link'
 
 
 
@@ -64,7 +65,9 @@ const AboutUs = () => {
                             />
                         </div>
                         <div className='mt-5'>
-                            <button className='btn btn-primary'>Initiate a Dialogue</button>
+                            <Link href={"/contact-us"}>
+                                <button className='btn btn-primary'>Initiate a Dialogue</button>
+                            </Link>
                         </div>
                     </div>
                     <div className='hidden lg:block w-1/2 relative '>
@@ -120,7 +123,9 @@ const AboutUs = () => {
 
                         </div>
                         <div className='mt-5'>
-                            <button className='btn btn-primary'>Learn More</button>
+                            <Link href={"/about-us"}>
+                                <button className='btn btn-primary'>Learn More</button>
+                            </Link>
                         </div>
                     </div>
                     <div className='hidden lg:flex w-1/2 justify-end'>

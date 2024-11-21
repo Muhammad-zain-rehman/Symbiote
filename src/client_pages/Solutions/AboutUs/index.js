@@ -41,12 +41,12 @@ const AboutUs = () => {
                 <div className=' text-secondary mt-10'>
                     <h1 className='text-4xl font-semibold'>Who We Are</h1>
                     <p className='text-lg mt-5'>
-                        Symbiote is at the cutting edge of Digi-Tech,
+                    Symbiotic is at the cutting edge of Digi-Tech,
                         seamlessly blending marketing prowess with advanced digital technology to drive
                         innovation and strategic growth. We deliver bespoke digital solutions designed to accelerate
                         marketing success for pharmaceutical companies, regardless of their size or digital maturity.
                         Our future-focused approach ensures that your brand not only adapts to the evolving digital landscape
-                        but thrives in it. Partner with Symbiote to unlock unparalleled marketing growth and establish a powerful,
+                        but thrives in it. Partner with Symbiotic to unlock unparalleled marketing growth and establish a powerful,
                         lasting presence in the pharma industry.
                     </p>
                 </div>
@@ -77,10 +77,10 @@ const AboutUs = () => {
                     <div className=' w-[50%] text-secondary mt-5'>
                         <h1 className='text-4xl font-semibold'>About Us</h1>
                         <p className='text-lg mt-5'>
-                            Symbiote stands at the forefront of pharmaceutical digital marketing.
+                        Symbiotic stands at the forefront of pharmaceutical digital marketing.
                             Our expertise lies in delivering an extensive array of digital solutions and services
                             that span the full spectrum of content lifecycle management. From initial concept development to creation,
-                            through to adaptive reuse, repurposing, and precise localization strategies, Symbiote ensures global dissemination across affiliate networks.
+                            through to adaptive reuse, repurposing, and precise localization strategies, Symbiotic ensures global dissemination across affiliate networks.
                         </p>
 
                         <div className='my-10 flex space-x-20'>
@@ -93,9 +93,11 @@ const AboutUs = () => {
                                 <div>Certified specialists</div>
                             </div>
                         </div>
-                        <button className=' btn btn-primary'>
-                            Learn More
-                        </button>
+                        <Link href={"/about-us"}>
+                            <button className=' btn btn-primary'>
+                                Learn More
+                            </button>
+                        </Link>
 
                     </div>
                 </div>
@@ -103,15 +105,17 @@ const AboutUs = () => {
                     <div className='w-[60%] '>
                         <h1 className='text-4xl font-semibold mb-5'>What we do</h1>
                         <div className='mb-5'>
-                            At Symbiote, we specialize in merging marketing and digital technology to deliver
+                            At Symbiotic, we specialize in merging marketing and digital technology to deliver
                             innovative solutions tailored for the pharmaceutical industry. Our expertise spans across all stages of
                             digital maturity, ensuring that as a pharma company, we can drive your marketing growth.
                             By leveraging cutting-edge technology and strategic insights, we help you connect with healthcare
                             professionals and patients more effectively, enhancing your brand’s reach and impact in the market.
                         </div>
-                        <button className=' btn btn-primary'>
-                            Learn More
-                        </button>
+                        <Link href={"/about-us"}>
+                            <button className=' btn btn-primary'>
+                                Learn More
+                            </button>
+                        </Link>
                     </div>
                     <div className=' w-[30%]  relative flex flex-col justify-end items-end pt-5 pr-5 '>
                         {

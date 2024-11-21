@@ -10,12 +10,13 @@ import AppProcess from './AppProcess'
 import VisevenExpertise from './VisevenExpertise'
 import { motion } from 'framer-motion'
 import { UP_ANIMATION } from '@/utils'
+import Link from 'next/link'
 
 
 const data = [
     {
         title: 'Digital Production Hub',
-        description: 'Symbiote is your go-to partner for cutting-edge digital marketing in the pharmaceutical and life sciences sectors. We offer a comprehensive suite of services, from virtual reality technology to mobile app development, designed to enhance patient engagement and streamline your digital transformation.',
+        description: 'Symbiotic is your go-to partner for cutting-edge digital marketing in the pharmaceutical and life sciences sectors. We offer a comprehensive suite of services, from virtual reality technology to mobile app development, designed to enhance patient engagement and streamline your digital transformation.',
         image: '/images/digital_production.svg'
     },
     {
@@ -25,17 +26,17 @@ const data = [
     },
     {
         title: 'Apps and Portals Development from',
-        description: 'Symbiote is your go-to partner for cutting-edge digital marketing in the pharmaceutical and life sciences sectors. We offer a comprehensive suite of services, from virtual reality technology to mobile app development.',
+        description: 'Symbiotic is your go-to partner for cutting-edge digital marketing in the pharmaceutical and life sciences sectors. We offer a comprehensive suite of services, from virtual reality technology to mobile app development.',
         image: '/images/mobile_apps_main.svg'
     },
     {
         title: 'Apps and Portals Development from',
-        description: 'Symbiote is your go-to partner for cutting-edge digital marketing in the pharmaceutical and life sciences sectors. We offer a comprehensive suite of services, from virtual reality technology to mobile app development.',
+        description: 'Symbiotic is your go-to partner for cutting-edge digital marketing in the pharmaceutical and life sciences sectors. We offer a comprehensive suite of services, from virtual reality technology to mobile app development.',
         image: '/images/mobile_apps_main.svg'
     },
     {
         title: 'Apps and Portals Development from',
-        description: 'Symbiote is your go-to partner for cutting-edge digital marketing in the pharmaceutical and life sciences sectors. We offer a comprehensive suite of services, from virtual reality technology to mobile app development.',
+        description: 'Symbiotic is your go-to partner for cutting-edge digital marketing in the pharmaceutical and life sciences sectors. We offer a comprehensive suite of services, from virtual reality technology to mobile app development.',
         image: '/images/mobile_apps_main.svg'
     },
     {
@@ -45,12 +46,12 @@ const data = [
     },
     {
         title: 'Omnichannel Marketing in Pharma ',
-        description: 'Symbiote is your go-to partner for cutting-edge digital marketing in the pharmaceutical and life sciences sectors. We offer a comprehensive suite of services, from virtual reality technology to mobile app development.',
+        description: 'Symbiotic is your go-to partner for cutting-edge digital marketing in the pharmaceutical and life sciences sectors. We offer a comprehensive suite of services, from virtual reality technology to mobile app development.',
         image: '/images/omnichannel.svg'
     },
     {
         title: 'Apps and Portals Development from',
-        description: 'Symbiote is your go-to partner for cutting-edge digital marketing in the pharmaceutical and life sciences sectors. We offer a comprehensive suite of services, from virtual reality technology to mobile app development.',
+        description: 'Symbiotic is your go-to partner for cutting-edge digital marketing in the pharmaceutical and life sciences sectors. We offer a comprehensive suite of services, from virtual reality technology to mobile app development.',
         image: '/images/mobile_apps_main.svg'
     },
     
@@ -80,9 +81,11 @@ const AppsAndPortalsDevelopment = ({index}) => {
                         />
                     </div>
                         <div className='mt-10 flex justify-center items-center lg:block'>
-                            <button className='bg-white text-black py-3 px-4 text-sm rounded-lg'>
-                                Start the conversation
-                            </button>
+                            <Link href={"/contact-us"}>
+                                <button className='bg-white text-black py-3 px-4 text-sm rounded-lg'>
+                                    Start the conversation
+                                </button>
+                            </Link>
                         </div>
                     </div>
                     <div className='hidden lg:flex w-1/2 justify-end items-center'>

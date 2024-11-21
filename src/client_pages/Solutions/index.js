@@ -12,6 +12,7 @@ import OurPortfolio from './OurPortfolio'
 import Journey from './Journey'
 import WhatClientSay from './WhatClientSay'
 import { UP_ANIMATION } from '@/utils'
+import Link from 'next/link'
 
 const ARR = [
   {
@@ -22,7 +23,7 @@ const ARR = [
   {
     title: "Strategic Execution",
     src: "/icons/content_hub.svg",
-    description: "At Symbiote, we excel in delivering fast and efficient end-to-end content solutions by decoupling production from creative processes."
+    description: "At Symbiotic, we excel in delivering fast and efficient end-to-end content solutions by decoupling production from creative processes."
   },
   {
     title: "Relentless Enhancement",
@@ -126,9 +127,11 @@ const HomePage = () => {
               more effectively and drive business success.
             </div>
             <div className='mt-10'>
-              <button className='bg-white text-black py-3 px-4 text-sm rounded-lg'>
-                Start the conversation
-              </button>
+              <Link href={"/contact-us"}>
+                <button className='bg-white text-black py-3 px-4 text-sm rounded-lg'>
+                  Start the conversation
+                </button>
+              </Link>
             </div>
           </div>
           <div className='lg:w-1/2'>
@@ -254,7 +257,7 @@ const HomePage = () => {
         <p className='text-center w-[60%] mt-8 container'>
           Empowering your digital presence with cutting-edge strategies tailored for the <br />
           pharmaceutical sector.
-          At Symbiote, we provide custom solutions and services actively <br /> used by industry leaders across the globe.
+          At Symbiotic, we provide custom solutions and services actively <br /> used by industry leaders across the globe.
         </p>
         <Slider />
       </motion.div>
@@ -291,9 +294,11 @@ const HomePage = () => {
 
           </div>
           <div className='flex justify-center mt-4'>
-            <button className=' uppercase btn btn-primary '>
-              Get A consulation
-            </button>
+            <Link href={"/contact-us"}>
+              <button className=' uppercase btn btn-primary '>
+                Get A consulation
+              </button>
+            </Link>
           </div>
         </motion.div>
       </div>

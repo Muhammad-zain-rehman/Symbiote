@@ -7,6 +7,7 @@ import AboutUs from './AboutUs'
 import RecentBlogs from './RecentBlogs'
 import ContactUsFrom from '@/components/ContactForm/Form'
 import { UP_ANIMATION } from '@/utils'
+import Link from 'next/link'
 
 const ARR = [
   {
@@ -150,13 +151,15 @@ const HomePage = () => {
 
 
               
-            <div {...UP_ANIMATION} className='flex space-x-5 mt-10'>
-            <button className=' btn btn-primary uppercase border-[1px] border-white/30'>
-              Our Works
-            </button>
-            <button className='bg-white uppercase text-black py-3 px-8 text-sm rounded-lg'>
-              Find out More
-            </button>
+            <div {...UP_ANIMATION} className='flex flex-col space-y-2 sm:space-y-0 sm:flex-row sm:space-x-5 mt-10'>
+            <Link href={"/services"}  className=' btn btn-primary uppercase border-[1px] border-white/30'>
+              Our Services
+            </Link>
+            <Link href={"/about-us"} className='bg-white py- btn uppercase text-black  text-sm '>
+                {/* <button className=''> */}
+                  Find out More
+                {/* </button> */}
+            </Link>
           </div>
 
 
@@ -290,7 +293,7 @@ const HomePage = () => {
         <p className='text-center w-[80%] lg:w-[60%] mt-8'>
           Empowering your digital presence with cutting-edge strategies tailored for the <br />
           pharmaceutical sector.
-          At Symbiote, we provide custom solutions and services actively <br /> used by industry leaders across the globe.
+          At Symbiotic, we provide custom solutions and services actively <br /> used by industry leaders across the globe.
         </p>
       </motion.div>
       <AboutUs />
