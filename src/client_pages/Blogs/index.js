@@ -8,39 +8,39 @@ import { UP_ANIMATION } from '@/utils'
 const DATA = [
     {
         image: "/images/blogs_dummy_image.svg",
-        name: "Viseven’s Q2 Calendar: Unmissable Life Science Events ",
+        name: "Symbiotic’s Q2 Calendar: Unmissable Life Science Events ",
         date: "07-25-2024",
-        description: "Viseven team embarked on a global journey, traversing continents to attend and participate in the world’s most prominent pharmaceutical events.",
+        description: "Symbiotic team embarked on a global journey, traversing continents to attend and participate in the world’s most prominent pharmaceutical events.",
     },
     {
         image: "/images/blogs_dummy_image.svg",
-        name: "Viseven’s Q2 Calendar: Unmissable Life Science Events ",
+        name: "Symbiotic’s Q2 Calendar: Unmissable Life Science Events ",
         date: "07-25-2024",
-        description: "Viseven team embarked on a global journey, traversing continents to attend and participate in the world’s most prominent pharmaceutical events.",
+        description: "Symbiotic team embarked on a global journey, traversing continents to attend and participate in the world’s most prominent pharmaceutical events.",
     },
     {
         image: "/images/blogs_dummy_image.svg",
-        name: "Viseven’s Q2 Calendar: Unmissable Life Science Events ",
+        name: "Symbiotic’s Q2 Calendar: Unmissable Life Science Events ",
         date: "07-25-2024",
-        description: "Viseven team embarked on a global journey, traversing continents to attend and participate in the world’s most prominent pharmaceutical events.",
+        description: "Symbiotic team embarked on a global journey, traversing continents to attend and participate in the world’s most prominent pharmaceutical events.",
     },
     {
         image: "/images/blogs_dummy_image.svg",
-        name: "Viseven’s Q2 Calendar: Unmissable Life Science Events ",
+        name: "Symbiotic’s Q2 Calendar: Unmissable Life Science Events ",
         date: "07-25-2024",
-        description: "Viseven team embarked on a global journey, traversing continents to attend and participate in the world’s most prominent pharmaceutical events.",
+        description: "Symbiotic team embarked on a global journey, traversing continents to attend and participate in the world’s most prominent pharmaceutical events.",
     },
     {
         image: "/images/blogs_dummy_image.svg",
-        name: "Viseven’s Q2 Calendar: Unmissable Life Science Events ",
+        name: "Symbiotic’s Q2 Calendar: Unmissable Life Science Events ",
         date: "07-25-2024",
-        description: "Viseven team embarked on a global journey, traversing continents to attend and participate in the world’s most prominent pharmaceutical events.",
+        description: "Symbiotic team embarked on a global journey, traversing continents to attend and participate in the world’s most prominent pharmaceutical events.",
     },
     {
         image: "/images/blogs_dummy_image.svg",
-        name: "Viseven’s Q2 Calendar: Unmissable Life Science Events ",
+        name: "Symbiotic’s Q2 Calendar: Unmissable Life Science Events ",
         date: "07-25-2024",
-        description: "Viseven team embarked on a global journey, traversing continents to attend and participate in the world’s most prominent pharmaceutical events.",
+        description: "Symbiotic team embarked on a global journey, traversing continents to attend and participate in the world’s most prominent pharmaceutical events.",
     },
 
 ]
@@ -61,7 +61,7 @@ const Blogs = () => {
 
 
                     <div className='text-center  w-[80%] mx-auto  text-[#E6E6E6] text-md md:text-lg'>
-                        Unlock your content with the help of Viseven. We provide custom solutions and services actively used by the top 50 Pharma and Life Sciences companies in over 50 countries worldwide
+                        Unlock your content with the help of Symbiotic. We provide custom solutions and services actively used by the top 50 Pharma and Life Sciences companies in over 50 countries worldwide
                     </div>
                     </motion.div>
 

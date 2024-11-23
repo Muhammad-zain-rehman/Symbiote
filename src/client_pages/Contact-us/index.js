@@ -23,7 +23,7 @@ const ContactUsContainer = () => {
                     <motion.div {...UP_ANIMATION} className='w-full container space-y-10  bg-cover bg-no-repeat text-sm py-3 relative '>
                         <h1 className='text-[30px] md:text-[50px] text-center font-bold text-white'>Contact Us</h1>
                         <div className='text-center  w-[80%] mx-auto  text-[#E6E6E6] text-md md:text-lg'>
-                            Unlock your content with the help of Viseven. We provide custom solutions and services actively used by the top 50 Pharma and Life Sciences companies in over 50 countries worldwide                </div>
+                            Unlock your content with the help of Symbiotic. We provide custom solutions and services actively used by the top 50 Pharma and Life Sciences companies in over 50 countries worldwide                </div>
                     </motion.div>
                 </div>
             </div>

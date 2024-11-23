@@ -262,7 +262,7 @@ const HomePage = () => {
           </div>
           <div className='text-center text-sm'>
 
-            Unlock your content with the help of Viseven. We provide custom solutions and services actively used by the top 50 Pharma <br />
+            Unlock your content with the help of Symbiotic. We provide custom solutions and services actively used by the top 50 Pharma <br />
             and Life Sciences companies in over 50 countries worldwide.
           </div>
 

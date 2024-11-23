@@ -107,7 +107,7 @@ const ContactUsForm = () => {
                 />
                 <div className="text-sm text-[#3F3F3F]">
                   By submitting this form, I hereby consent to the given personal data being used by
-                  Viseven to send me information materials defined in the Privacy Policy, which I
+                  Symbiotic to send me information materials defined in the Privacy Policy, which I
                   have read and agree to. I understand that I can change my communication preferences
                   at any time.
                 </div>

@@ -7,7 +7,7 @@ const VisevenExpertise = () => {
     return (
         <div className='bg-black w-full py-20'>
             <div className='container flex flex-col justify-center items-center text-center lg:w-[76%] mx-auto '>
-                <p className='text-3xl font-semibold text-white'>Viseven expertise in Health apps development for <br /> physicians, patients, and pharmacists</p>
+                <p className='text-3xl font-semibold text-white'>Symbiotic expertise in Health apps development for <br /> physicians, patients, and pharmacists</p>
                 <div className='bg-[#f1f1f1] py-5 w-full mt-10 rounded-3xl lg:flex justify-between'>
                     <div className='lg:w-[60%] px-8 md:pl-16 md:pr-0 py-6'>
                         <p className='text-3xl font-semibold text-start mb-5'>CLM Mobile App for Healthcare <br />Marketing</p>

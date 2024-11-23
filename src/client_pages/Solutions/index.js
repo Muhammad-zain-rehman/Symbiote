@@ -82,17 +82,17 @@ const MAIN_SECTION_ARRY = [
 const DCF_IMPLEMENTATION = [
   {
     title: "Dedicated to Pharma",
-    description: "Viseven has >13 years of experience providing interactive content development service for Pharma & Life science. We have medical experts on board and are able to deliver Medical writing and Medical Marketing services.",
+    description: "Symbiotic has >13 years of experience providing interactive content development service for Pharma & Life science. We have medical experts on board and are able to deliver Medical writing and Medical Marketing services.",
     icon: "/icons/medals.svg"
   },
   {
     title: "Advanced Customer Care",
-    description: "Viseven DCF provides a dedicated Customer Success Team to answer any inquiries and a Customer Support Team available 24/7.",
+    description: "Symbiotic DCF provides a dedicated Customer Success Team to answer any inquiries and a Customer Support Team available 24/7.",
     icon: "/icons/users.svg"
   },
   {
     title: "All in one place",
-    description: "Viseven DCF provides a dedicated Customer Success Team to answer any inquiries and a Customer Support Team available 24/7.",
+    description: "Symbiotic DCF provides a dedicated Customer Success Team to answer any inquiries and a Customer Support Team available 24/7.",
     icon: "/icons/small-board.svg"
   },
   {
@@ -102,7 +102,7 @@ const DCF_IMPLEMENTATION = [
   },
   {
     title: "Advanced performance analytics",
-    description: "Viseven DCF provides customized dashboards and advanced reporting introduced in Power BI.",
+    description: "Symbiotic DCF provides customized dashboards and advanced reporting introduced in Power BI.",
     icon: "/icons/pro.svg"
   },
 
