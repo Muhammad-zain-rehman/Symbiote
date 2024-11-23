@@ -191,30 +191,35 @@ const HomePage = () => {
                 src={"/images/zapier.svg"}
                 width={4000}
                 height={4000}
+                alt='zapier'
                 className='w-64  mx-4 self-start flex-none'
               />
               <Image
                 src={"/images/spotify.svg"}
                 width={4000}
                 height={4000}
+                alt='spotify'
                 className='w-64  mx-4 self-start flex-none'
               />
               <Image
                 src={"/images/slack.svg"}
                 width={4000}
                 height={4000}
+                alt='slack'
                 className='w-64  mx-4 self-start flex-none'
               />
               <Image
                 src={"/images/amazon.svg"}
                 width={4000}
                 height={4000}
+                alt='amazon'
                 className='w-64  mx-4 self-start flex-none'
               />
               <Image
                 src={"/images/adobe.svg"}
                 width={4000}
                 height={4000}
+                alt='adobe'
                 className='w-64  mx-4 self-start flex-none'
               />
 
@@ -223,30 +228,35 @@ const HomePage = () => {
                 src={"/images/zapier.svg"}
                 width={4000}
                 height={4000}
+                alt='zapier'
                 className='w-64  mx-4 self-start flex-none'
               />
               <Image
                 src={"/images/spotify.svg"}
                 width={4000}
                 height={4000}
+                alt='spotify'
                 className='w-64  mx-4 self-start flex-none'
               />
               <Image
                 src={"/images/slack.svg"}
                 width={4000}
                 height={4000}
+                alt='slack'
                 className='w-64  mx-4 self-start flex-none'
               />
               <Image
                 src={"/images/amazon.svg"}
                 width={4000}
                 height={4000}
+                alt='amazon'
                 className='w-64  mx-4 self-start flex-none'
               />
               <Image
                 src={"/images/adobe.svg"}
                 width={4000}
                 height={4000}
+                alt='adobe'
                 className='w-64  mx-4 self-start flex-none'
               />
 
