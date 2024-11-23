@@ -4,6 +4,7 @@ import WhatClientSay from '../WhatClientSay'
 import { UP_ANIMATION } from '@/utils'
 import {motion} from 'framer-motion'
 import Link from 'next/link'
+import WorldMap from '@/components/Map'
 
 const ABOUT_US_ARR = [
     {
@@ -145,13 +146,14 @@ const AboutUs = () => {
             </motion.div>
             <motion.div {...UP_ANIMATION} className=' container w-full mt-4 lg:mt-20 flex flex-col items-center space-y-11 justify-center '>
                 <h1 className='text-4xl'>HealthCare Presences</h1>
-                <Image
+                {/* <Image
                     src={"/images/map.svg"}
                     className=' w-1/2'
                     width={612}
                     height={2000}
 
-                />
+                /> */}
+                <WorldMap/>
                <Link href={"/about-us"}>
                     <button className=' btn btn-primary'>
                         Learn More

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import WhatClientSay from '../WhatClientSay'
+import WorldMap from '@/components/Map'
 
 const ABOUT_US_ARR = [
     {
@@ -149,6 +150,7 @@ const AboutUs = () => {
                     height={2000}
 
                 />
+                {/* <WorldMap/> */}
             </div>
             <WhatClientSay/>
 

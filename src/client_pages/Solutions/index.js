@@ -13,6 +13,7 @@ import Journey from './Journey'
 import WhatClientSay from './WhatClientSay'
 import { UP_ANIMATION } from '@/utils'
 import Link from 'next/link'
+import WorldMap from '@/components/Map'
 
 const ARR = [
   {
@@ -113,7 +114,7 @@ const HomePage = () => {
   return (
     <>
       <div className='bg-primary'>
-        <motion.div {...UP_ANIMATION} className='text-white min-h-[450px] container  relative  lg:flex '>
+        <motion.div {...UP_ANIMATION} className='text-white min-h-[450px] container  relative  lg:flex items-center space-y-10 lg:space-y-0 lgspace-x-10 '>
           <div className='lg:w-1/2 pt-8 lg:pb-14'>
             <h1 className='hidden lg:block text-5xl font-bold'>DIGITAL CONTENT<br /> FACTORY</h1>
             <h1 className='lg:hidden text-center text-5xl font-bold'>DIGITAL CONTENT FACTORY</h1>
@@ -135,12 +136,13 @@ const HomePage = () => {
             </div>
           </div>
           <div className='lg:w-1/2'>
-            <Image
+            {/* <Image
               src={"/images/map-white.svg"}
               className='h-[300px] lg:h-[492px]'
               width={1000}
               height={1000}
-            />
+            /> */}
+            <WorldMap white={true} custom_class="w-full"/>
           </div>
 
 
