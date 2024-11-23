@@ -20,15 +20,15 @@ const Footer = () => {
     >
 
       <div className='container space-y-12'>
-        <div className=' flex flex-wrap flex-col md:flex-row text-sm justify-between items-center gap-y-5'>
+        <div className=' flex flex-wrap flex-col md:flex-row text-sm md:justify-between md:items-center gap-y-5'>
           <Image src={"/images/logo.png"} className='w-[120px]' alt='footer-logo' width={1000} height={1000} />
 
 
-          <div className='flex space-x-4 lg:space-x-8 text-sm'>
+          <div className='flex flex-col sm:flex-row sm:space-x-4 lg:space-x-8 text-sm'>
             {
               nav_links.map((item,index) => (
                 <Link href={item.url} key={index}>
-                  <div className={`group text-center cursor-pointer transition-all duration-500 ease-out relative ${path === item.url ? "text-white" : "text-[#A3A0A0] hover:text-white"}`}>
+                  <div className={`group mb-4 md:mb-0 md:text-center cursor-pointer transition-all duration-500 ease-out relative ${path === item.url ? "text-white" : "text-[#A3A0A0] hover:text-white"}`}>
                     {item.name}
                     <div className={`${path === item.url ? "scale-x-[1]" : ""} origin-bottom-left transition-all duration-500 ease-out scale-x-[0] group-hover:scale-x-[1] h-1 mt-2 rounded-xl w-16 bg-white`}></div>
                   </div>
