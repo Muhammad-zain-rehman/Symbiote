@@ -12,6 +12,8 @@ import CheckField from '@/components/FormikFields/CheckField';
 import { BiLoaderAlt } from 'react-icons/bi';
 import countries from '../Countries';
 import { BASE_URL } from '@/constants';
+import { IoAlertCircle } from "react-icons/io5";
+
 
 const ContactUsForm = () => {
   const [loading, setLoading] = useState(false);
@@ -26,18 +28,19 @@ const ContactUsForm = () => {
     is_verified: false,
   };
 
-  const validationSchema = yup.object({
-    name: yup.string().required('Required'),
-    email: yup.string().email('Invalid email format').required('Required'),
-    job_title: yup.string().required('Required'),
-    company: yup.string().required('Required'),
-    industry: yup.string().required('Required'),
-    country: yup.object().nullable().required('Required'),
-    is_verified: yup.boolean().oneOf([true], 'Required'),
-  });
+  // const validationSchema = yup.object({
+  //   name: yup.string().required('Required'),
+  //   email: yup.string().email('Invalid email format').required('Required'),
+  //   job_title: yup.string().required('Required'),
+  //   company: yup.string().required('Required'),
+  //   industry: yup.string().required('Required'),
+  //   country: yup.object().nullable().required('Required'),
+  //   is_verified: yup.boolean().oneOf([true], 'Required'),
+  // });
 
-  const handleSubmit = async (values,{setSubmitting, resetForm}) => {
+  const handleSubmit = async (values, { setSubmitting, resetForm }) => {
     setLoading(true);
+  
     const payload = {
       name: values.name,
       email: values.email,
@@ -49,18 +52,21 @@ const ContactUsForm = () => {
     try {
       const response = await axios.post(`${BASE_URL}api/contact`, payload);
       console.log('API Response:', payload);
-      toast.success('Form submitted successfully!', {
-        style: { backgroundColor: '#1d1d1d', color: 'white' }, 
+      toast.success(`Thank you for reaching out, We'll contact you soon!`, {
+        style: { backgroundColor: 'white', color: '#1d1d1d' },
       });
       resetForm()
     } catch (error) {
       console.error('API Error:', error);
-      toast.error('There was an error submitting the form.', {
-        style: { backgroundColor: '#1d1d1d', color: 'white' }, 
-      });
+      toast.error('There was an error submitting the form.',
+        {
+          icon: <IoAlertCircle className='text-white text-4xl' />,
+          style: { backgroundColor: 'red', color: 'white' },
+        }
+      );
     } finally {
       setLoading(false);
-      
+
     }
   };
 
@@ -79,7 +85,7 @@ const ContactUsForm = () => {
       />
       <Formik
         initialValues={initialValues}
-        validationSchema={validationSchema}
+        // validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
         {(form) => (
